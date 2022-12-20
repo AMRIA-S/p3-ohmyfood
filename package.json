@@ -7,5 +7,9 @@
     "sass": "sass --watch ./sass/_main.scss:./css/styles.css"
   },
   "author": "Sollene Amria",
-  "license": "ISC"
+  "license": "ISC",
+  
+  "dependencies": {
+    "sass": "^1.56.2"
+  }
 }
