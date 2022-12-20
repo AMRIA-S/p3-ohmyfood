@@ -1,12 +1,41 @@
-.nav {
-  background-color: rgb(218, 36, 36);
+@font-face {
+  font-family: shrinkhand;
+  src: url(police/Shrikhand.ttf);
 }
-.nav__pt {
-  list-style-type: none;
+.image-header {
+  text-align: center;
+  padding: 10px;
+}
+.image-header__logo {
+  width: 50%;
 }
 
-li:hover {
+.resto {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: grey;
+  padding: 15px;
+}
+.footer__title {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  margin: 0px;
+}
+
+.menu-footer {
+  list-style-type: none;
+}
+.menu-footer__link {
+  margin: 0px;
+  color: #fff;
+}
+.menu-footer__link:hover {
   color: blue;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,12 +1,55 @@
-$color-background: rgb(218, 36, 36);
-$color:blue;
+@font-face {
+    font-family: shrinkhand;
+    src: url(police/Shrikhand.ttf);
+}
+@mixin police {
+font-family: 'Shrikhand', cursive;
+color: white;
+}
 
-.nav {
+$color-background: grey;
+$color: blue;
+$color-link: #fff;
+
+$zero: 0px;
+
+
+
+
+.image-header {
+    text-align: center;
+    padding: 10px;
+
+    &__logo {
+        width: 50%;
+    }
+}
+.resto {
+    @include police;
+    font-size: 20px;
+}
+
+
+.footer {
     background-color: $color-background;
-&__pt {
+    padding: 15px;
+
+    &__title {
+        @include police;
+        margin: $zero;
+    }    
+}
+.menu-footer {
     list-style-type: none;
-}
-}
-li:hover {
-    color:$color
+
+
+    &__link {
+        margin: $zero;
+        color: $color-link;
+    
+        &:hover {
+            color:$color;
+            margin: $zero;
+        }
+    }
 }
