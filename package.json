@@ -1,0 +1,11 @@
+{
+  "name": "p3-ohmyfood",
+  "version": "1.0.0",
+  "description": "site ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/_main.scss:./css/styles.css"
+  },
+  "author": "Sollene Amria",
+  "license": "ISC"
+}

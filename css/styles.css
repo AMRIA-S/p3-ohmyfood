@@ -1,0 +1,12 @@
+.nav {
+  background-color: grey;
+}
+.nav__pt {
+  list-style-type: none;
+}
+
+li:hover {
+  color: blue;
+}
+
+/*# sourceMappingURL=styles.css.map */

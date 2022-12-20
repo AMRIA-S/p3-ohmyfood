@@ -1,0 +1,12 @@
+$color-background: grey;
+$color:blue;
+
+.nav {
+    background-color: $color-background;
+&__pt {
+    list-style-type: none;
+}
+}
+li:hover {
+    color:$color
+}
