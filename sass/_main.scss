@@ -1,55 +1,93 @@
-@font-face {
-    font-family: shrinkhand;
-    src: url(police/Shrikhand.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 @mixin police {
-font-family: 'Shrikhand', cursive;
+font-family: shrikhand;
 color: white;
+font-size: 17px;
 }
 
-$color-background: grey;
+@mixin link-footer {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+$background-footer: #464646;
+$background-formulaire: #e7e4e4;
 $color: blue;
 $color-link: #fff;
 
-$zero: 0px;
+$margin: 0px;
+$padding: 0px 14px 20px 10px 6px 16px;
+$size: 11px 15px 16px 17px;
 
 
 
-
+body {
+    margin: $margin;
+}
 .image-header {
     text-align: center;
-    padding: 10px;
+    padding-top: nth($list: $padding, $n: 3);
+    padding-bottom: nth($list: $padding, $n: 5);
 
     &__logo {
         width: 50%;
     }
 }
-.resto {
-    @include police;
-    font-size: 20px;
+
+.formulaire {
+    background-color: $background-formulaire;
+    box-shadow: inset darken($color: $background-formulaire, $amount: 15%) 1px 4px 4px;
+    padding: nth($list: $padding, $n: 6);
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+
+    &__adresse {
+        background-color: $background-formulaire;
+        border: none;
+    }
 }
-
-
+.resto {
+    font-family: shrikhand;
+}
 .footer {
-    background-color: $color-background;
-    padding: 15px;
+    background-color: $background-footer;
+    padding: nth($list: $padding, $n: 2);
 
     &__title {
         @include police;
-        margin: $zero;
+        margin: $margin;
+        padding-bottom: nth($list: $padding, $n: 3);
     }    
 }
 .menu-footer {
     list-style-type: none;
-
+    padding-left: nth($list: $padding, $n: 1);
+    margin: $margin;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 
     &__link {
-        margin: $zero;
         color: $color-link;
-    
+        font-size: nth($list: $size, $n: 2);
+        
+        &--icon {
+            @include link-footer;
+        }  
+        
         &:hover {
             color:$color;
-            margin: $zero;
+            margin: $margin;
         }
     }
+}
+.fa-utensils {
+    font-size: nth($list: $size, $n: 3);
+}
+.fa-handshake-angle {
+    font-size: nth($list: $size, $n: 1);
 }

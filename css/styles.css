@@ -1,17 +1,28 @@
-@font-face {
-  font-family: shrikhand;
-  src: url(C:/Users/amria/OneDrive/Documents/p3-ohmyfood/police/shrikhand.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   margin: 0px;
 }
 
 .image-header {
   text-align: center;
-  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 6px;
 }
 .image-header__logo {
   width: 50%;
+}
+
+.formulaire {
+  background-color: #e7e4e4;
+  box-shadow: inset #c3bcbc 1px 4px 4px;
+  padding: 16px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+.formulaire__adresse {
+  background-color: #e7e4e4;
+  border: none;
 }
 
 .resto {
@@ -20,14 +31,14 @@ body {
 
 .footer {
   background-color: #464646;
-  padding: 20px;
+  padding: 14px;
 }
 .footer__title {
   font-family: shrikhand;
   color: white;
   font-size: 17px;
   margin: 0px;
-  padding-bottom: 14px;
+  padding-bottom: 20px;
 }
 
 .menu-footer {
@@ -40,7 +51,7 @@ body {
 }
 .menu-footer__link {
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
 }
 .menu-footer__link--icon {
   gap: 10px;
@@ -53,7 +64,7 @@ body {
 }
 
 .fa-utensils {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .fa-handshake-angle {
