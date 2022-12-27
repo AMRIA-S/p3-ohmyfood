@@ -1,6 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@font-face {
+    font-family: shrikhand;
+    src: url(../sass/police/shrihand/Shrikhand-Regular.ttf);
+}
 
-@mixin police {
+@font-face {
+    font-family: roboto;
+    src: url(../sass/police/roboto/Roboto-Regular.ttf);
+}
+
+
+@mixin police-titre {
 font-family: shrikhand;
 color: white;
 font-size: 17px;
@@ -13,19 +22,31 @@ font-size: 17px;
 
 }
 
-$background-footer: #464646;
-$background-formulaire: #e7e4e4;
+@mixin text-form {
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+
+$color-primaire: #9356dc;
+$color-secondaire: #ff79da;
+$color-tertiaire: #99e2d0;
+$background-gris-clair: #e7e4e4a6;
 $color: blue;
 $color-link: #fff;
+$background-footer: #464646;
+$ombre-btn: #cac8c8b8;
 
-$margin: 0px;
-$padding: 0px 14px 20px 10px 6px 16px;
+$margin: 0px 20px 24px;
+$padding: 0px 14px 20px 10px 6px 16px 18px 25px;
 $size: 11px 15px 16px 17px;
 
 
 
 body {
-    margin: $margin;
+    margin: nth($list: $margin, $n: 1);
+    font-family: roboto;
 }
 .image-header {
     text-align: center;
@@ -36,37 +57,164 @@ body {
         width: 50%;
     }
 }
-
 .formulaire {
-    background-color: $background-formulaire;
-    box-shadow: inset darken($color: $background-formulaire, $amount: 15%) 1px 4px 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recherche {
+    background-color: $background-gris-clair;
+    box-shadow: inset darken($background-gris-clair, 15%) 1px 4px 4px;
     padding: nth($list: $padding, $n: 6);
     gap: 10px;
     display: flex;
     justify-content: center;
 
     &__adresse {
-        background-color: $background-formulaire;
+        background-color: initial;
         border: none;
+        font-weight: 700;
     }
 }
-.resto {
-    font-family: shrikhand;
+
+.form {
+    background-color: #f2f2f299;
+    display: flex;
+    flex-direction: column;
+    padding: 36px 21px 45px 21px;
+
+    &__title {
+        @include text-form;
+    }
+
+    &__subtitle {
+        @include text-form;
+    }
+
+    &__btn {
+        text-align: center;
+        padding-top: nth($list: $padding, $n: 2);
+    }
+
+    .btn-explorez {
+        border: none;
+        font-family: "roboto";
+        color: #fff;
+        font-size: nth($list: $size, $n: 2);
+        background-color: aqua;
+        border-radius: 25px;
+        width: 72%;
+        padding: nth($list: $padding, $n: 2);
+        cursor: pointer;
+        background: linear-gradient($color-secondaire, $color-primaire);
+        box-shadow: darken($ombre-btn, 20%) 0px 5px 9px;
+
+        &:hover {
+            box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
+            background: linear-gradient(lighten($color-secondaire, 2%), lighten($color-primaire, 2%));
+        }
+    }
 }
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: nth($list: $padding, $n: 7);
+    margin-bottom: nth($list: $margin, $n: 2);
+
+    &__title {
+        font-weight: 700;
+    }
+}
+.btn-acceuil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    &__menu {
+        background-color: rgba(240, 240, 240, 0.4705882353);
+        box-shadow: rgb(202 200 200 / 72%) 0px 5px 9px;
+        padding: nth($list: $padding, $n: 8);
+        margin-bottom: nth($list: $margin, $n: 3);
+        border-radius: 16px;
+        border: none;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+        cursor: pointer;
+    
+        &:hover {
+            box-shadow: darken($color: $ombre-btn, $amount: 15%) 0px 5px 9px;
+            background: lighten($color-primaire, 35%);
+        }
+
+        &:hover .color{
+            color: $color-primaire;
+        }
+
+        .color {
+            color: gray;
+            font-size: nth($list: $size, $n: 3);
+        }
+    }
+}
+a {
+    text-decoration: none;
+}
+
+.list-resto {
+    background-color: $background-gris-clair;
+    
+    .restaurant {
+        display: flex;
+        flex-direction: column;
+
+        &__article {
+            width: 90%;
+        }
+
+        &__cards {
+            margin: nth($list: $margin, $n: 1);
+            background-color: #fff;
+        }
+
+        &__photo {
+            object-fit: cover;
+            height: 153px;
+            width: 100%;
+        }
+
+        &__nom {
+            display: flex;
+            flex-direction: column;
+            gap: 6px
+        }
+        &__nom p h4 {
+            margin: nth($list: $margin, $n: 1);
+        }
+    }
+}
+
 .footer {
     background-color: $background-footer;
     padding: nth($list: $padding, $n: 2);
 
     &__title {
-        @include police;
-        margin: $margin;
+        @include police-titre;
+        margin: nth($list: $margin, $n: 1);
         padding-bottom: nth($list: $padding, $n: 3);
+        font-weight: normal;
     }    
 }
 .menu-footer {
     list-style-type: none;
     padding-left: nth($list: $padding, $n: 1);
-    margin: $margin;
+    margin: nth($list: $margin, $n: 1);
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -77,17 +225,19 @@ body {
         
         &--icon {
             @include link-footer;
-        }  
+        
+            .fa-utensils {
+                font-size: nth($list: $size, $n: 3);
+            }
+            .fa-handshake-angle {
+                font-size: nth($list: $size, $n: 1);
+            }
+        }
+        
         
         &:hover {
             color:$color;
             margin: $margin;
         }
     }
-}
-.fa-utensils {
-    font-size: nth($list: $size, $n: 3);
-}
-.fa-handshake-angle {
-    font-size: nth($list: $size, $n: 1);
 }
