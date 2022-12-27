@@ -165,36 +165,56 @@ body {
 }
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .list-resto {
     background-color: $background-gris-clair;
+    padding: 20px;
     
+
+    /*Ne pas oublier les animations*/
+
+
     .restaurant {
         display: flex;
         flex-direction: column;
 
         &__article {
-            width: 90%;
+            width: 100%;
+            margin-bottom: 20px;
         }
 
         &__cards {
-            margin: nth($list: $margin, $n: 1);
+            margin: 0px;
             background-color: #fff;
+            border-radius: 20px;
+            box-shadow: darken($ombre-btn, 20%) 0px 5px 9px;
+
+            &:hover {
+                box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
+            }
         }
 
         &__photo {
             object-fit: cover;
-            height: 153px;
+            height: 144px;
             width: 100%;
+            border-radius: 20px 20px 0px 0px;
         }
 
         &__nom {
             display: flex;
             flex-direction: column;
-            gap: 6px
+            gap: 3px;
+            padding: 12px;
+            color: black;
+
         }
-        &__nom p h4 {
+        & p {
+            margin: nth($list: $margin, $n: 1);
+        }
+        & h4 {
             margin: nth($list: $margin, $n: 1);
         }
     }

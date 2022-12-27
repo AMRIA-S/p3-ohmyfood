@@ -123,33 +123,48 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .list-resto {
   background-color: rgba(231, 228, 228, 0.6509803922);
+  padding: 20px;
+  /*Ne pas oublier les animations*/
 }
 .list-resto .restaurant {
   display: flex;
   flex-direction: column;
 }
 .list-resto .restaurant__article {
-  width: 90%;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .list-resto .restaurant__cards {
   margin: 0px;
   background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(152, 148, 148, 0.7215686275) 0px 5px 9px;
+}
+.list-resto .restaurant__cards:hover {
+  box-shadow: rgba(127, 122, 122, 0.7215686275) 0px 5px 9px;
 }
 .list-resto .restaurant__photo {
   object-fit: cover;
-  height: 153px;
+  height: 144px;
   width: 100%;
+  border-radius: 20px 20px 0px 0px;
 }
 .list-resto .restaurant__nom {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 3px;
+  padding: 12px;
+  color: black;
 }
-.list-resto .restaurant__nom p h4 {
+.list-resto .restaurant p {
+  margin: 0px;
+}
+.list-resto .restaurant h4 {
   margin: 0px;
 }
 
