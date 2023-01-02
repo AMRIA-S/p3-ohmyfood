@@ -1,0 +1,16 @@
+@font-face {
+    font-family: shrikhand;
+    src: url(../sass/police/shrihand/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../sass/police/roboto/Roboto-Regular.ttf);
+}
+
+
+@mixin police-titre {
+font-family: shrikhand;
+color: white;
+font-size: 17px;
+}
