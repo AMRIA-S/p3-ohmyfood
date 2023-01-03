@@ -10,3 +10,9 @@
     text-align: center;
     padding-bottom: 12px;
 }
+
+@mixin icon-heart {
+    position: absolute;
+    right: 10%;
+    font-size: 26px;
+}

@@ -70,11 +70,10 @@ body {
   padding: 14px;
   cursor: pointer;
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: rgba(152, 148, 148, 0.7215686275) 0px 5px 9px;
 }
 .form .btn-explorez:hover {
   box-shadow: rgba(127, 122, 122, 0.7215686275) 0px 5px 9px;
-  background: linear-gradient(#ff83dd, #985ede);
+  background: linear-gradient(#ff8de0, #9e67e0);
 }
 
 .fonctionnement {
@@ -107,18 +106,26 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 14px;
-  cursor: pointer;
 }
-.btn-acceuil__menu:hover {
-  box-shadow: rgba(164, 161, 161, 0.7215686275) 0px 5px 9px;
+.btn-acceuil__menu .number {
+  border: 2px solid #9356dc;
+  padding: 5px 7px 2px 7px;
+  border-radius: 25px;
+  margin: 0;
+  position: absolute;
+  left: 7px;
+  background: #9356dc;
+  color: #fff;
+}
+.btn-acceuil__menu--3 {
   background: #f2eafb;
-}
-.btn-acceuil__menu:hover .color {
-  color: #9356dc;
 }
 .btn-acceuil__menu .color {
   color: gray;
   font-size: 16px;
+}
+.btn-acceuil__menu .color--3 {
+  color: #9356dc;
 }
 
 a {
@@ -126,14 +133,10 @@ a {
   cursor: pointer;
   color: #fff;
 }
-a:hover {
-  color: #000;
-}
 
 .list-resto {
   background-color: rgba(231, 228, 228, 0.6509803922);
   padding: 20px;
-  /*Ne pas oublier les animations*/
 }
 .list-resto .restaurant {
   display: flex;
@@ -147,10 +150,20 @@ a:hover {
   margin: 0px;
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: rgba(152, 148, 148, 0.7215686275) 0px 5px 9px;
 }
 .list-resto .restaurant__cards:hover {
   box-shadow: rgba(127, 122, 122, 0.7215686275) 0px 5px 9px;
+}
+.list-resto .restaurant__cards .nouveau {
+  font-weight: 600;
+  font-size: 14px;
+  height: 14px;
+  color: #069a4b;
+  position: absolute;
+  right: 10%;
+  background: #8af7dd;
+  border: 2px #8af7dd solid;
+  padding: 7px;
 }
 .list-resto .restaurant__photo {
   object-fit: cover;
@@ -165,11 +178,36 @@ a:hover {
   padding: 12px;
   color: black;
 }
-.list-resto .restaurant p {
-  margin: 0px;
+.list-resto .restaurant .heart {
+  position: absolute;
+  right: 10%;
+  font-size: 26px;
+  z-index: 3;
+}
+.list-resto .restaurant .heart:hover {
+  color: white;
+  z-index: 2;
+}
+.list-resto .restaurant .heart-hover {
+  color: white;
+  position: absolute;
+  right: 10%;
+  font-size: 26px;
+  z-index: 2;
+}
+.list-resto .restaurant .heart-hover:hover {
+  z-index: 3;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .list-resto .restaurant h4 {
   margin: 0px;
+}
+.list-resto .restaurant h5 {
+  margin: 0px;
+  font-size: 15px;
+  font-weight: normal;
 }
 
 .footer {
@@ -197,6 +235,9 @@ a:hover {
   color: #fff;
   font-size: 15px;
 }
+.menu-footer__link:hover a {
+  color: #9356dc;
+}
 .menu-footer__link--icon {
   gap: 10px;
   display: flex;
@@ -209,7 +250,7 @@ a:hover {
   font-size: 11px;
 }
 .menu-footer__link:hover {
-  color: #000;
+  color: #9356dc;
 }
 
 /*# sourceMappingURL=styles.css.map */

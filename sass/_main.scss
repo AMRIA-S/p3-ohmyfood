@@ -69,11 +69,10 @@ body {
         padding: nth($list: $padding, $n: 2);
         cursor: pointer;
         background: linear-gradient($color-secondaire, $color-primaire);
-        box-shadow: darken($ombre-btn, 20%) 0px 5px 9px;
 
         &:hover {
             box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
-            background: linear-gradient(lighten($color-secondaire, 2%), lighten($color-primaire, 2%));
+            background: linear-gradient(lighten($color-secondaire, 4%), lighten($color-primaire, 4%));
         }
     }
 }
@@ -90,6 +89,7 @@ body {
         font-weight: 700;
     }
 }
+
 .btn-acceuil {
     display: flex;
     flex-direction: column;
@@ -108,20 +108,29 @@ body {
         flex-direction: row;
         align-items: center;
         gap: 14px;
-        cursor: pointer;
-    
-        &:hover {
-            box-shadow: darken($color: $ombre-btn, $amount: 15%) 0px 5px 9px;
-            background: lighten($color-primaire, 35%);
-        }
 
-        &:hover .color{
-            color: $color-primaire;
+        .number {
+            border: 2px solid $color-primaire;
+            padding: 5px 7px 2px 7px;
+            border-radius: 25px;
+            margin: 0;
+            position: absolute;
+            left: 7px;
+            background: $color-primaire;
+            color: $color-link;
+        }
+    
+        &--3 {
+            background: lighten($color-primaire, 35%);
         }
 
         .color {
             color: gray;
             font-size: nth($list: $size, $n: 3);
+
+            &--3 {
+                color: $color-primaire;
+            }
         }
     }
 }
@@ -129,18 +138,11 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: $color-link;
-
-    &:hover {
-        color: $color-hover;
-    }
 }
 
 .list-resto {
     background-color: $background-gris-clair;
     padding: 20px;
-    
-
-    /*Ne pas oublier les animations*/
 
 
     .restaurant {
@@ -156,10 +158,21 @@ a {
             margin: 0px;
             background-color: #fff;
             border-radius: 20px;
-            box-shadow: darken($ombre-btn, 20%) 0px 5px 9px;
 
             &:hover {
                 box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
+            }
+
+            .nouveau {
+                font-weight: 600;
+                font-size: 14px;
+                height: 14px;
+                color: #069a4b;
+                position: absolute;
+                right: 10%;
+                background: #8af7dd;
+                border: 2px #8af7dd solid;
+                padding: 7px;
             }
         }
 
@@ -178,11 +191,38 @@ a {
             color: black;
 
         }
-        & p {
-            margin: nth($list: $margin, $n: 1);
+
+        .heart {
+            @include icon-heart;
+            z-index: 3;
+
+            &:hover {
+                color: white;
+                z-index: 2;
+            }
         }
+
+        .heart-hover {
+            color: white;
+            @include icon-heart;
+            z-index: 2;
+
+            &:hover {
+                z-index: 3;
+                background: linear-gradient($color-primaire, $color-secondaire);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
         & h4 {
             margin: nth($list: $margin, $n: 1);
+        }
+
+        & h5{
+            margin: nth($list: $margin, $n: 1);
+            font-size: 15px;
+            font-weight: normal;
         }
     }
 }
@@ -209,6 +249,10 @@ a {
     &__link {
         color: $color-link;
         font-size: nth($list: $size, $n: 2);
+
+        &:hover a {
+            color:  $color-primaire;
+        }
         
         &--icon {
             @include link-footer;
@@ -223,7 +267,7 @@ a {
         
         
         &:hover {
-            color:$color-hover;
+            color:$color-primaire;
         }
     }
 }
