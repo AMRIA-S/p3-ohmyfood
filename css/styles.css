@@ -124,6 +124,10 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #fff;
+}
+a:hover {
+  color: #000;
 }
 
 .list-resto {
@@ -205,8 +209,7 @@ a {
   font-size: 11px;
 }
 .menu-footer__link:hover {
-  color: blue;
-  margin: 0px 20px 24px;
+  color: #000;
 }
 
 /*# sourceMappingURL=styles.css.map */

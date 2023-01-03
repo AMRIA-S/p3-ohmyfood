@@ -1,0 +1,12 @@
+@mixin link-footer {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+@mixin text-form {
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 12px;
+}
