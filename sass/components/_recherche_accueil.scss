@@ -6,7 +6,6 @@
         background-color: $background-gris-clair;
         box-shadow: inset darken($background-gris-clair, 15%) 1px 4px 4px;
         padding: nth($list: $padding, $n: 6);
-        gap: 10px;
         display: flex;
         justify-content: center;
 
@@ -14,6 +13,9 @@
             background-color: initial;
             border: none;
             font-weight: 700;
+            text-align: center;
+            font-family: 'roboto';
+            font-size: 16px
         }
     }
 }

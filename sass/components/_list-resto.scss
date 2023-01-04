@@ -50,8 +50,8 @@
 
         }
 
-        .heart {
-            @include icon-heart;
+        .heart-index {
+            @include icon-heart-index;
             z-index: 3;
 
             &:hover {
@@ -60,9 +60,9 @@
             }
         }
 
-        .heart-hover {
+        .heart-hover-index {
             color: white;
-            @include icon-heart;
+            @include icon-heart-index;
             z-index: 2;
 
             &:hover {

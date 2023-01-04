@@ -1,7 +1,19 @@
 .image-header {
     text-align: center;
-    padding-top: nth($list: $padding, $n: 3);
-    padding-bottom: nth($list: $padding, $n: 5);
+    padding-top: 20px;
+    padding-bottom: 6px;
+
+    .arrow-left {
+        font-size: nth($list: $size, $n: 5);
+        float: left;
+        padding-left: nth($list: $padding, $n: 3);
+        padding-top: 8px;
+        color: $background-footer;
+
+        &:hover {
+            color: $color-secondaire;
+        }
+    }
 
     &__logo {
         width: 50%;
