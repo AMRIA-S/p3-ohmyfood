@@ -6,60 +6,27 @@
   font-family: roboto;
   src: url(../sass/police/roboto/Roboto-Regular.ttf);
 }
-body {
-  margin: 0px;
-  font-family: roboto;
-}
-
-.image-header {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 6px;
-}
-.image-header__logo {
-  width: 50%;
-}
-
-.formulaire {
-  display: flex;
-  flex-direction: column;
-}
-
-.recherche {
-  background-color: rgba(231, 228, 228, 0.6509803922);
-  box-shadow: inset rgba(195, 188, 188, 0.6509803922) 1px 4px 4px;
-  padding: 16px;
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-}
-.recherche__adresse {
-  background-color: initial;
-  border: none;
-  font-weight: 700;
-}
-
-.form {
+.explorer-restos {
   background-color: rgba(242, 242, 242, 0.6);
   display: flex;
   flex-direction: column;
   padding: 36px 21px 45px 21px;
 }
-.form__title {
+.explorer-restos__title {
   margin: 0px;
   text-align: center;
   padding-bottom: 12px;
 }
-.form__subtitle {
+.explorer-restos__subtitle {
   margin: 0px;
   text-align: center;
   padding-bottom: 12px;
 }
-.form__btn {
+.explorer-restos__btn {
   text-align: center;
   padding-top: 14px;
 }
-.form .btn-explorez {
+.explorer-restos .btn-explorez {
   border: none;
   font-family: "roboto";
   color: #fff;
@@ -71,67 +38,9 @@ body {
   cursor: pointer;
   background: linear-gradient(#ff79da, #9356dc);
 }
-.form .btn-explorez:hover {
+.explorer-restos .btn-explorez:hover {
   box-shadow: rgba(127, 122, 122, 0.7215686275) 0px 5px 9px;
   background: linear-gradient(#ff8de0, #9e67e0);
-}
-
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 18px;
-  margin-bottom: 20px;
-}
-.fonctionnement__title {
-  font-weight: 700;
-}
-
-.btn-acceuil {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.btn-acceuil__menu {
-  background-color: rgba(240, 240, 240, 0.4705882353);
-  box-shadow: rgba(202, 200, 200, 0.72) 0px 5px 9px;
-  padding: 25px;
-  margin-bottom: 24px;
-  border-radius: 16px;
-  border: none;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 14px;
-}
-.btn-acceuil__menu .number {
-  border: 2px solid #9356dc;
-  padding: 5px 7px 2px 7px;
-  border-radius: 25px;
-  margin: 0;
-  position: absolute;
-  left: 7px;
-  background: #9356dc;
-  color: #fff;
-}
-.btn-acceuil__menu--3 {
-  background: #f2eafb;
-}
-.btn-acceuil__menu .color {
-  color: gray;
-  font-size: 16px;
-}
-.btn-acceuil__menu .color--3 {
-  color: #9356dc;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #fff;
 }
 
 .list-resto {
@@ -208,6 +117,95 @@ a {
   margin: 0px;
   font-size: 15px;
   font-weight: normal;
+}
+
+body {
+  margin: 0px;
+  font-family: roboto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+.fonctionnement__title {
+  font-weight: 700;
+}
+.fonctionnement .btn-acceuil {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.fonctionnement .btn-acceuil__menu {
+  background-color: rgba(240, 240, 240, 0.4705882353);
+  box-shadow: rgba(202, 200, 200, 0.72) 0px 5px 9px;
+  padding: 25px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+.fonctionnement .btn-acceuil__menu .number {
+  border: 2px solid #9356dc;
+  padding: 5px 7px 2px 7px;
+  border-radius: 25px;
+  margin: 0;
+  position: absolute;
+  left: 7px;
+  background: #9356dc;
+  color: #fff;
+}
+.fonctionnement .btn-acceuil__menu--3 {
+  background: #f2eafb;
+}
+.fonctionnement .btn-acceuil__menu .color {
+  color: gray;
+  font-size: 16px;
+}
+.fonctionnement .btn-acceuil__menu .color--3 {
+  color: #9356dc;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+}
+.formulaire .recherche {
+  background-color: rgba(231, 228, 228, 0.6509803922);
+  box-shadow: inset rgba(195, 188, 188, 0.6509803922) 1px 4px 4px;
+  padding: 16px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+.formulaire .recherche__adresse {
+  background-color: initial;
+  border: none;
+  font-weight: 700;
+}
+
+.image-header {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 6px;
+}
+.image-header__logo {
+  width: 50%;
 }
 
 .footer {

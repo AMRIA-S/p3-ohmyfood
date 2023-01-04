@@ -1,0 +1,10 @@
+body {
+    margin: nth($list: $margin, $n: 1);
+    font-family: roboto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $color-link;
+}

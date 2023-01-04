@@ -1,0 +1,86 @@
+.list-resto {
+    background-color: $background-gris-clair;
+    padding: 20px;
+
+
+    .restaurant {
+        display: flex;
+        flex-direction: column;
+
+        &__article {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &__cards {
+            margin: 0px;
+            background-color: #fff;
+            border-radius: 20px;
+
+            &:hover {
+                box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
+            }
+
+            .nouveau {
+                font-weight: 600;
+                font-size: 14px;
+                height: 14px;
+                color: #069a4b;
+                position: absolute;
+                right: 10%;
+                background: #8af7dd;
+                border: 2px #8af7dd solid;
+                padding: 7px;
+            }
+        }
+
+        &__photo {
+            object-fit: cover;
+            height: 144px;
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        &__nom {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            padding: 12px;
+            color: black;
+
+        }
+
+        .heart {
+            @include icon-heart;
+            z-index: 3;
+
+            &:hover {
+                color: white;
+                z-index: 2;
+            }
+        }
+
+        .heart-hover {
+            color: white;
+            @include icon-heart;
+            z-index: 2;
+
+            &:hover {
+                z-index: 3;
+                background: linear-gradient($color-primaire, $color-secondaire);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        & h4 {
+            margin: nth($list: $margin, $n: 1);
+        }
+
+        & h5{
+            margin: nth($list: $margin, $n: 1);
+            font-size: 15px;
+            font-weight: normal;
+        }
+    }
+}

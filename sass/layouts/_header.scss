@@ -1,0 +1,9 @@
+.image-header {
+    text-align: center;
+    padding-top: nth($list: $padding, $n: 3);
+    padding-bottom: nth($list: $padding, $n: 5);
+
+    &__logo {
+        width: 50%;
+    }
+}

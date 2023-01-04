@@ -1,0 +1,19 @@
+.formulaire {
+    display: flex;
+    flex-direction: column;
+
+    .recherche {
+        background-color: $background-gris-clair;
+        box-shadow: inset darken($background-gris-clair, 15%) 1px 4px 4px;
+        padding: nth($list: $padding, $n: 6);
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+
+        &__adresse {
+            background-color: initial;
+            border: none;
+            font-weight: 700;
+        }
+    }
+}
