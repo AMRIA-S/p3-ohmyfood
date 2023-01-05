@@ -11,8 +11,21 @@
     padding-bottom: 12px;
 }
 
-@mixin icon-heart-index {
+@mixin icon-heart {
     position: absolute;
     right: 10%;
     font-size: 26px;
+}
+
+@mixin icon-heart-menu {
+    position: absolute;
+    right: 10%;
+    font-size: 26px;
+}
+
+@mixin heart-hover {
+    z-index: 3;
+    background: linear-gradient($color-primaire, $color-secondaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

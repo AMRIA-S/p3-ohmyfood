@@ -22,7 +22,7 @@
         font-size: nth($list: $size, $n: 2);
 
         &:hover a {
-            color:  $color-primaire;
+            color:  $color-secondaire;
         }
         
         &--icon {
@@ -38,7 +38,7 @@
         
         
         &:hover {
-            color:$color-primaire;
+            color:$color-secondaire;
         }
     }
 }

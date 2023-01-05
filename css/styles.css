@@ -22,21 +22,20 @@
   text-align: center;
   padding-bottom: 12px;
 }
-.explorer-restos__btn {
-  text-align: center;
-  padding-top: 14px;
-}
 .explorer-restos .btn-explorez {
   border: none;
   font-family: "roboto";
   color: #fff;
   font-size: 15px;
-  background-color: aqua;
   border-radius: 25px;
-  width: 72%;
+  width: 206px;
   padding: 14px;
   cursor: pointer;
   background: linear-gradient(#ff79da, #9356dc);
+  margin-top: 14px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
 .explorer-restos .btn-explorez:hover {
   box-shadow: rgba(127, 122, 122, 0.7215686275) 0px 5px 9px;
@@ -86,29 +85,6 @@
   gap: 3px;
   padding: 12px;
   color: black;
-}
-.list-resto .restaurant .heart-index {
-  position: absolute;
-  right: 10%;
-  font-size: 26px;
-  z-index: 3;
-}
-.list-resto .restaurant .heart-index:hover {
-  color: white;
-  z-index: 2;
-}
-.list-resto .restaurant .heart-hover-index {
-  color: white;
-  position: absolute;
-  right: 10%;
-  font-size: 26px;
-  z-index: 2;
-}
-.list-resto .restaurant .heart-hover-index:hover {
-  z-index: 3;
-  background: linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .list-resto .restaurant h4 {
   margin: 0px;
@@ -201,34 +177,135 @@ a {
   font-size: 16px;
 }
 
-.image_restaurant {
+.border-heart {
+  position: absolute;
+  right: 10%;
+  font-size: 26px;
+  z-index: 3;
+}
+.border-heart:hover {
+  color: white;
+  z-index: 2;
+}
+
+.heart-colorer {
+  color: white;
+  position: absolute;
+  right: 10%;
+  font-size: 26px;
+  z-index: 2;
+}
+.heart-colorer:hover {
+  z-index: 3;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.image-restaurant {
   width: 100%;
   height: 230px;
   object-fit: cover;
 }
 
-.heart {
-  position: absolute;
-  right: 10%;
+.header-form {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.header-form__title {
+  font-family: shrikhand;
   font-size: 26px;
+  font-weight: 500;
+  padding-left: 20px;
 }
 
-.image-header {
+.hidden {
+  display: none;
+}
+
+.section-form {
+  border: none;
+  margin-top: 14px;
+}
+.section-form__titre {
+  border-bottom: 4px solid #99e2d0;
+  width: 40px;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+.section-form__titre--plats {
+  margin-left: 38px;
+}
+.section-form .label-checkbox {
+  border: none;
+  margin: 0px;
+  padding: 12px;
+  border-radius: 15px;
+  box-shadow: rgba(177, 174, 174, 0.7215686275) 0px 0px 20px;
+  margin-bottom: 14px;
+}
+.section-form .label-checkbox:hover {
+  box-shadow: rgba(127, 122, 122, 0.7215686275) 0px 0px 20px;
+}
+.section-form .label-checkbox h4 {
+  margin: 0px;
+  font-size: 16px;
+}
+.section-form .label-checkbox__align-prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.section-form .label-checkbox__align-prix h6 {
+  margin: 0px;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 220px;
+  white-space: nowrap;
+}
+.section-form .label-checkbox__align-prix h5 {
+  margin: 0px;
+  font-size: 16px;
+}
+
+.envoyer {
+  border: none;
+  font-family: "roboto";
+  color: #fff;
+  font-size: 15px;
+  border-radius: 25px;
+  width: 206px;
+  padding: 14px;
+  cursor: pointer;
+  background: linear-gradient(#ff79da, #9356dc);
+  margin: 14px auto 40px auto;
+  display: block;
+}
+.envoyer:hover {
+  box-shadow: rgba(127, 122, 122, 0.7215686275) 0px 5px 9px;
+  background: linear-gradient(#ff8de0, #9e67e0);
+}
+
+.header {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 6px;
 }
-.image-header .arrow-left {
+.header__arrow {
   font-size: 20px;
   float: left;
   padding-left: 20px;
   padding-top: 8px;
   color: #464646;
 }
-.image-header .arrow-left:hover {
+.header__arrow:hover {
   color: #ff79da;
 }
-.image-header__logo {
+.header__logo {
   width: 50%;
 }
 
@@ -258,7 +335,7 @@ a {
   font-size: 15px;
 }
 .menu-footer__link:hover a {
-  color: #9356dc;
+  color: #ff79da;
 }
 .menu-footer__link--icon {
   gap: 10px;
@@ -272,7 +349,7 @@ a {
   font-size: 11px;
 }
 .menu-footer__link:hover {
-  color: #9356dc;
+  color: #ff79da;
 }
 
 /*# sourceMappingURL=styles.css.map */

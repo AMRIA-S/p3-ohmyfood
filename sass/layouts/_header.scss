@@ -1,9 +1,9 @@
-.image-header {
+.header {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 6px;
 
-    .arrow-left {
+    &__arrow {
         font-size: nth($list: $size, $n: 5);
         float: left;
         padding-left: nth($list: $padding, $n: 3);
@@ -16,6 +16,6 @@
     }
 
     &__logo {
-        width: 50%;
+        width: nth($list: $width, $n: 4);
     }
 }

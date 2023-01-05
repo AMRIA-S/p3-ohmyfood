@@ -1,0 +1,19 @@
+.border-heart {
+    @include icon-heart;
+    z-index: 3;
+
+    &:hover {
+        color: white;
+        z-index: 2;
+    }
+}
+
+.heart-colorer {
+    color: white;
+    @include icon-heart;
+    z-index: 2;
+
+    &:hover {
+        @include heart-hover;
+    }
+}

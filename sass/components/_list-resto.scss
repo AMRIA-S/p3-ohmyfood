@@ -50,29 +50,6 @@
 
         }
 
-        .heart-index {
-            @include icon-heart-index;
-            z-index: 3;
-
-            &:hover {
-                color: white;
-                z-index: 2;
-            }
-        }
-
-        .heart-hover-index {
-            color: white;
-            @include icon-heart-index;
-            z-index: 2;
-
-            &:hover {
-                z-index: 3;
-                background: linear-gradient($color-primaire, $color-secondaire);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-        }
-
         & h4 {
             margin: nth($list: $margin, $n: 1);
         }

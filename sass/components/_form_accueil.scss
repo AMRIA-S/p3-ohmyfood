@@ -12,22 +12,20 @@
         @include text-form;
     }
 
-    &__btn {
-        text-align: center;
-        padding-top: nth($list: $padding, $n: 2);
-    }
-
     .btn-explorez {
         border: none;
         font-family: "roboto";
         color: #fff;
         font-size: nth($list: $size, $n: 2);
-        background-color: aqua;
         border-radius: 25px;
-        width: 72%;
+        width: nth($list: $width, $n: 5);
         padding: nth($list: $padding, $n: 2);
         cursor: pointer;
         background: linear-gradient($color-secondaire, $color-primaire);
+        margin-top: 14px;
+        margin-right: $marge-centrer;
+        margin-left: $marge-centrer;
+        display: block;
 
         &:hover {
             box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;

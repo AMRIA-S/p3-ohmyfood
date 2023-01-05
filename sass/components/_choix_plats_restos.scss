@@ -1,0 +1,97 @@
+.image-restaurant {
+    width: nth($list: $width, $n: 3);
+    height: 230px;
+    object-fit: cover;
+}
+
+.header-form {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    &__title {
+        font-family: shrikhand;
+        font-size: nth($list: $size, $n: 6);
+        font-weight: 500;
+        padding-left: nth($list: $padding, $n: 3);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.section-form {
+    border: none;
+    margin-top: 14px;
+
+    &__titre {
+        border-bottom: 4px solid $color-tertiaire;
+        width: nth($list: $width, $n: 1);
+        padding-bottom: nth($list: $padding, $n: 5);
+        margin-bottom: nth($list: $margin, $n: 6);
+        font-size: nth($list: $size, $n: 7);
+    }
+    &__titre--plats {
+        margin-left: nth($list: $margin, $n: 5);
+    }
+
+    .label-checkbox {
+        border: none;
+        margin: nth($list: $margin, $n: 1);
+        padding: nth($list: $padding, $n: 9);
+        border-radius: 15px;
+        box-shadow: darken($ombre-btn, 10%) 0px 0px 20px;
+        margin-bottom: nth($list: $margin, $n: 4);
+
+        &:hover {
+            box-shadow: darken($ombre-btn, 30%) 0px 0px 20px;
+        }
+
+        & h4 {
+            margin: nth($list: $margin, $n: 1);
+            font-size: nth($list: $size, $n: 3);
+        }
+
+        &__align-prix {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            & h6 {
+                margin: nth($list: $margin, $n: 1);
+                font-size: nth($list: $size, $n: 8);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: nth($list: $width, $n: 2);
+                white-space: nowrap;
+            }
+
+            & h5 {
+                margin: nth($list: $margin, $n: 1);
+                font-size: nth($list: $size, $n: 3);
+            }
+        }
+    }
+
+    
+}
+.envoyer {
+    border: none;
+    font-family: "roboto";
+    color: #fff;
+    font-size: nth($list: $size, $n: 2);
+    border-radius: 25px;
+    width: nth($list: $width, $n: 5);
+    padding: nth($list: $padding, $n: 2);
+    cursor: pointer;
+    background: linear-gradient($color-secondaire, $color-primaire);
+    margin: 14px auto 40px auto;
+    display: block;
+
+    &:hover {
+        box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
+        background: linear-gradient(lighten($color-secondaire, 4%), lighten($color-primaire, 4%))
+    }
+}
