@@ -1,3 +1,16 @@
+@keyframes apparition {
+  0% {
+    transform: translatey(10%);
+    opacity: 0%;
+  }
+  50% {
+    transform: translatey(5%);
+    opacity: 0.1%;
+  }
+  100% {
+    transform: translatey(0%);
+  }
+}
 @font-face {
   font-family: shrikhand;
   src: url(../sass/police/shrihand/Shrikhand-Regular.ttf);
@@ -227,6 +240,15 @@ a {
 .section-form {
   border: none;
   margin-top: 14px;
+}
+.section-form--entree {
+  animation: apparition 2s;
+}
+.section-form--plat {
+  animation: apparition 6s;
+}
+.section-form--dessert {
+  animation: apparition 10s;
 }
 .section-form__titre {
   border-bottom: 4px solid #99e2d0;

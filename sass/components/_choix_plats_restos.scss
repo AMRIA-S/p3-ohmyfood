@@ -25,6 +25,19 @@
     border: none;
     margin-top: 14px;
 
+    &--entree {
+        animation: apparition 2s;
+    }
+
+    &--plat {
+        animation: apparition 6s;
+    }
+
+    &--dessert {
+        animation: apparition 10s;
+    }
+    
+
     &__titre {
         border-bottom: 4px solid $color-tertiaire;
         width: nth($list: $width, $n: 1);
@@ -75,8 +88,8 @@
         }
     }
 
-    
 }
+
 .envoyer {
     border: none;
     font-family: "roboto";

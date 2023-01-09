@@ -17,12 +17,6 @@
     font-size: 26px;
 }
 
-@mixin icon-heart-menu {
-    position: absolute;
-    right: 10%;
-    font-size: 26px;
-}
-
 @mixin heart-hover {
     z-index: 3;
     background: linear-gradient($color-primaire, $color-secondaire);
