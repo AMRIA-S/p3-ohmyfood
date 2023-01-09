@@ -8,6 +8,11 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    border-radius: 25px 25px 0px 0px;
+    margin-top: -38px;
+    background: white;
+    position: relative;
+    z-index: 2;
 
     &__title {
         font-family: shrikhand;
@@ -59,6 +64,21 @@
 
         &:hover {
             box-shadow: darken($ombre-btn, 30%) 0px 0px 20px;
+        }
+        &:hover .onglet-check {
+            font-size: 26px;
+            display: block;
+            color: white;
+            border-radius: 0px 15px 15px 0px;
+            background: $color-tertiaire;
+            padding: nth($list: $padding, $n: 7) nth($list: $padding, $n: 6);
+            right: 14px;
+            margin-top: -12px;
+            position: absolute;
+        }
+
+        .onglet-check {
+            display: none;
         }
 
         & h4 {

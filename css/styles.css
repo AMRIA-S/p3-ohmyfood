@@ -19,6 +19,19 @@
   font-family: roboto;
   src: url(../sass/police/roboto/Roboto-Regular.ttf);
 }
+@keyframes apparition {
+  0% {
+    transform: translatey(10%);
+    opacity: 0%;
+  }
+  50% {
+    transform: translatey(5%);
+    opacity: 0.1%;
+  }
+  100% {
+    transform: translatey(0%);
+  }
+}
 .explorer-restos {
   background-color: rgba(242, 242, 242, 0.6);
   display: flex;
@@ -196,6 +209,9 @@ a {
   font-size: 26px;
   z-index: 3;
 }
+.border-heart--heart {
+  right: 6%;
+}
 .border-heart:hover {
   color: white;
   z-index: 2;
@@ -207,6 +223,9 @@ a {
   right: 10%;
   font-size: 26px;
   z-index: 2;
+}
+.heart-colorer--heart {
+  right: 6%;
 }
 .heart-colorer:hover {
   z-index: 3;
@@ -225,6 +244,11 @@ a {
   display: flex;
   align-items: center;
   flex-direction: row;
+  border-radius: 25px 25px 0px 0px;
+  margin-top: -38px;
+  background: white;
+  position: relative;
+  z-index: 2;
 }
 .header-form__title {
   font-family: shrikhand;
@@ -270,6 +294,20 @@ a {
 }
 .section-form .label-checkbox:hover {
   box-shadow: rgba(127, 122, 122, 0.7215686275) 0px 0px 20px;
+}
+.section-form .label-checkbox:hover .onglet-check {
+  font-size: 26px;
+  display: block;
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+  background: #99e2d0;
+  padding: 18px 16px;
+  right: 14px;
+  margin-top: -12px;
+  position: absolute;
+}
+.section-form .label-checkbox .onglet-check {
+  display: none;
 }
 .section-form .label-checkbox h4 {
   margin: 0px;
