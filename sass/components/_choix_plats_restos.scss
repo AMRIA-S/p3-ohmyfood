@@ -26,38 +26,22 @@
     display: none;
 }
 
-.section-form {
-    border: none;
-    margin-top: 14px;
 
-    &--entree {
-        animation: apparition 2s;
-    }
 
-    &--plat {
-        animation: apparition 6s;
-    }
+.titre-section{
+    border-bottom: 4px solid $color-tertiaire;
+    width: nth($list: $width, $n: 1);
+    padding-bottom: nth($list: $padding, $n: 5);
+    margin-bottom: nth($list: $margin, $n: 6);
+    font-size: nth($list: $size, $n: 7);
+    margin-left: 18px;
 
-    &--dessert {
-        animation: apparition 10s;
-    }
     
-
-    &__titre {
-        border-bottom: 4px solid $color-tertiaire;
-        width: nth($list: $width, $n: 1);
-        padding-bottom: nth($list: $padding, $n: 5);
-        margin-bottom: nth($list: $margin, $n: 6);
-        font-size: nth($list: $size, $n: 7);
-    }
-    &__titre--plats {
-        margin-left: nth($list: $margin, $n: 5);
-    }
-
-    .label-checkbox {
+}
+    .fieldset {
         border: none;
-        margin: nth($list: $margin, $n: 1);
-        padding: nth($list: $padding, $n: 9);
+        margin: nth($list: $margin, $n: 4);
+        padding: nth($list: $padding, $n: 3);
         border-radius: 15px;
         box-shadow: darken($ombre-btn, 10%) 0px 0px 20px;
         margin-bottom: nth($list: $margin, $n: 4);
@@ -65,66 +49,52 @@
         &:hover {
             box-shadow: darken($ombre-btn, 30%) 0px 0px 20px;
         }
-        &:hover .onglet-check {
-            font-size: 26px;
-            display: block;
-            color: white;
-            border-radius: 0px 15px 15px 0px;
-            background: $color-tertiaire;
-            padding: nth($list: $padding, $n: 7) nth($list: $padding, $n: 6);
-            right: 14px;
-            margin-top: -12px;
-            position: absolute;
-        }
-
-        .onglet-check {
-            display: none;
-        }
-
-        & h4 {
-            margin: nth($list: $margin, $n: 1);
-            font-size: nth($list: $size, $n: 3);
-        }
-
+        
         &__align-prix {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-end;
+            margin: 0;
 
-            & h6 {
-                margin: nth($list: $margin, $n: 1);
-                font-size: nth($list: $size, $n: 8);
-                overflow: hidden;
-                text-overflow: ellipsis;
-                width: nth($list: $width, $n: 2);
-                white-space: nowrap;
-            }
+        }
+        & dt {
+            margin: nth($list: $margin, $n: 1);
+            font-size: nth($list: $size, $n: 8);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: nth($list: $width, $n: 2);
+            white-space: nowrap;
+        }
 
-            & h5 {
-                margin: nth($list: $margin, $n: 1);
-                font-size: nth($list: $size, $n: 3);
-            }
+        & h6 {
+            margin: nth($list: $margin, $n: 1);
+        }
+        &:hover .btn-check {
+            display: block;
+            color: $color-link;
+            border: none;
+            border-radius: 0px 15px 15px 0px;
+            background: $color-tertiaire;
+            padding: 23px 28px;
+            right: 14px;
+            margin-top: -21px;
+            position: absolute;
+
+            
+    
+            
         }
     }
+ .btn-check {
+    display: none;
 
-}
-
-.envoyer {
-    border: none;
-    font-family: "roboto";
-    color: #fff;
-    font-size: nth($list: $size, $n: 2);
-    border-radius: 25px;
-    width: nth($list: $width, $n: 5);
-    padding: nth($list: $padding, $n: 2);
-    cursor: pointer;
-    background: linear-gradient($color-secondaire, $color-primaire);
-    margin: 14px auto 40px auto;
-    display: block;
-
-    &:hover {
-        box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
-        background: linear-gradient(lighten($color-secondaire, 4%), lighten($color-primaire, 4%))
+    &__icon {
+    font-size: 30px;
     }
 }
+
+
+
+
+

@@ -1,0 +1,41 @@
+.btn-explorez {
+    border: none;
+    font-family: "roboto";
+    color: #fff;
+    font-size: nth($list: $size, $n: 2);
+    border-radius: 25px;
+    width: nth($list: $width, $n: 5);
+    padding: nth($list: $padding, $n: 2);
+    cursor: pointer;
+    background: linear-gradient($color-secondaire, $color-primaire);
+    box-shadow: $ombre-btn 0px 5px 9px;
+    margin-top: 14px;
+    margin-right: $marge-centrer;
+    margin-left: $marge-centrer;
+    display: block;
+
+    &:hover {
+        box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
+        background: linear-gradient(lighten($color-secondaire, 4%), lighten($color-primaire, 4%))
+    }
+}
+
+.commander {
+    border: none;
+    font-family: "roboto";
+    color: #fff;
+    font-size: nth($list: $size, $n: 2);
+    border-radius: 25px;
+    width: nth($list: $width, $n: 5);
+    padding: nth($list: $padding, $n: 2);
+    cursor: pointer;
+    background: linear-gradient($color-secondaire, $color-primaire);
+    box-shadow: $ombre-btn 0px 5px 9px;
+    margin: nth($list: $margin, $n: 7) auto;
+    display: block;
+
+    &:hover {
+        box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
+        background: linear-gradient(lighten($color-secondaire, 4%), lighten($color-primaire, 4%))
+    }
+}

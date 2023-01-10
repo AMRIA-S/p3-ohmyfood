@@ -1,0 +1,43 @@
+.fieldset {
+    &--entree-1 {
+        animation: apparition 4s;
+    }
+    &--entree-2 {
+        animation: apparition 6s;
+    }
+    &--entree-3 {
+        animation: apparition 8s;
+    }
+
+    &--plat-1 {
+        animation: apparition 12s;
+    }
+    &--plat-2 {
+        animation: apparition 14s;
+    }
+    &--plat-3 {
+        animation: apparition 16s;
+    }
+
+    &--dessert-1 {
+        animation: apparition 20s;
+    }
+    &--dessert-2 {
+        animation: apparition 22s;
+    }
+    &--dessert-3 {
+        animation: apparition 24s;
+    }
+}
+
+.titre-section {
+    &--entree {
+        animation: apparition 2s;
+    }
+    &--plat {
+        animation: apparition 10s;
+    }
+    &--dessert {
+        animation: apparition 18s;
+    }
+}

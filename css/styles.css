@@ -35,25 +35,6 @@
   text-align: center;
   padding-bottom: 12px;
 }
-.explorer-restos .btn-explorez {
-  border: none;
-  font-family: "roboto";
-  color: #fff;
-  font-size: 15px;
-  border-radius: 25px;
-  width: 206px;
-  padding: 14px;
-  cursor: pointer;
-  background: linear-gradient(#ff79da, #9356dc);
-  margin-top: 14px;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-}
-.explorer-restos .btn-explorez:hover {
-  box-shadow: rgba(127, 122, 122, 0.7215686275) 0px 5px 9px;
-  background: linear-gradient(#ff8de0, #9e67e0);
-}
 
 .list-resto {
   background-color: rgba(231, 228, 228, 0.6509803922);
@@ -71,9 +52,10 @@
   margin: 0px;
   background-color: #fff;
   border-radius: 20px;
+  box-shadow: rgba(116, 116, 116, 0.5019607843) 0px 5px 9px;
 }
 .list-resto .restaurant__cards:hover {
-  box-shadow: rgba(127, 122, 122, 0.7215686275) 0px 5px 9px;
+  box-shadow: rgba(65, 65, 65, 0.5019607843) 0px 5px 9px;
 }
 .list-resto .restaurant__cards .nouveau {
   font-weight: 600;
@@ -106,6 +88,44 @@
   margin: 0px;
   font-size: 15px;
   font-weight: normal;
+}
+
+.fieldset--entree-1 {
+  animation: apparition 4s;
+}
+.fieldset--entree-2 {
+  animation: apparition 6s;
+}
+.fieldset--entree-3 {
+  animation: apparition 8s;
+}
+.fieldset--plat-1 {
+  animation: apparition 12s;
+}
+.fieldset--plat-2 {
+  animation: apparition 14s;
+}
+.fieldset--plat-3 {
+  animation: apparition 16s;
+}
+.fieldset--dessert-1 {
+  animation: apparition 20s;
+}
+.fieldset--dessert-2 {
+  animation: apparition 22s;
+}
+.fieldset--dessert-3 {
+  animation: apparition 24s;
+}
+
+.titre-section--entree {
+  animation: apparition 2s;
+}
+.titre-section--plat {
+  animation: apparition 10s;
+}
+.titre-section--dessert {
+  animation: apparition 18s;
 }
 
 body {
@@ -209,6 +229,9 @@ a {
   position: absolute;
   right: 10%;
   font-size: 26px;
+  transform: scaley(0);
+  transition: transform 300ms;
+  transform-origin: bottom;
   z-index: 2;
 }
 .heart-colorer--heart {
@@ -219,6 +242,46 @@ a {
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.btn-explorez {
+  border: none;
+  font-family: "roboto";
+  color: #fff;
+  font-size: 15px;
+  border-radius: 25px;
+  width: 206px;
+  padding: 14px;
+  cursor: pointer;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: rgba(116, 116, 116, 0.5019607843) 0px 5px 9px;
+  margin-top: 14px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+.btn-explorez:hover {
+  box-shadow: rgba(40, 40, 40, 0.5019607843) 0px 5px 9px;
+  background: linear-gradient(#ff8de0, #9e67e0);
+}
+
+.commander {
+  border: none;
+  font-family: "roboto";
+  color: #fff;
+  font-size: 15px;
+  border-radius: 25px;
+  width: 206px;
+  padding: 14px;
+  cursor: pointer;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: rgba(116, 116, 116, 0.5019607843) 0px 5px 9px;
+  margin: 30px auto;
+  display: block;
+}
+.commander:hover {
+  box-shadow: rgba(40, 40, 40, 0.5019607843) 0px 5px 9px;
+  background: linear-gradient(#ff8de0, #9e67e0);
 }
 
 .image-restaurant {
@@ -248,65 +311,34 @@ a {
   display: none;
 }
 
-.section-form {
-  border: none;
-  margin-top: 14px;
-}
-.section-form--entree {
-  animation: apparition 2s;
-}
-.section-form--plat {
-  animation: apparition 6s;
-}
-.section-form--dessert {
-  animation: apparition 10s;
-}
-.section-form__titre {
+.titre-section {
   border-bottom: 4px solid #99e2d0;
   width: 40px;
   padding-bottom: 6px;
   margin-bottom: 12px;
   font-size: 18px;
+  margin-left: 18px;
 }
-.section-form__titre--plats {
-  margin-left: 38px;
-}
-.section-form .label-checkbox {
+
+.fieldset {
   border: none;
-  margin: 0px;
-  padding: 12px;
+  margin: 14px;
+  padding: 20px;
   border-radius: 15px;
-  box-shadow: rgba(177, 174, 174, 0.7215686275) 0px 0px 20px;
+  box-shadow: rgba(91, 91, 91, 0.5019607843) 0px 0px 20px;
   margin-bottom: 14px;
 }
-.section-form .label-checkbox:hover {
-  box-shadow: rgba(127, 122, 122, 0.7215686275) 0px 0px 20px;
+.fieldset:hover {
+  box-shadow: rgba(40, 40, 40, 0.5019607843) 0px 0px 20px;
 }
-.section-form .label-checkbox:hover .onglet-check {
-  font-size: 26px;
-  display: block;
-  color: white;
-  border-radius: 0px 15px 15px 0px;
-  background: #99e2d0;
-  padding: 18px 16px;
-  right: 14px;
-  margin-top: -12px;
-  position: absolute;
-}
-.section-form .label-checkbox .onglet-check {
-  display: none;
-}
-.section-form .label-checkbox h4 {
-  margin: 0px;
-  font-size: 16px;
-}
-.section-form .label-checkbox__align-prix {
+.fieldset__align-prix {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  margin: 0;
 }
-.section-form .label-checkbox__align-prix h6 {
+.fieldset dt {
   margin: 0px;
   font-size: 12px;
   overflow: hidden;
@@ -314,27 +346,26 @@ a {
   width: 220px;
   white-space: nowrap;
 }
-.section-form .label-checkbox__align-prix h5 {
+.fieldset h6 {
   margin: 0px;
-  font-size: 16px;
+}
+.fieldset:hover .btn-check {
+  display: block;
+  color: #fff;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  background: #99e2d0;
+  padding: 23px 28px;
+  right: 14px;
+  margin-top: -21px;
+  position: absolute;
 }
 
-.envoyer {
-  border: none;
-  font-family: "roboto";
-  color: #fff;
-  font-size: 15px;
-  border-radius: 25px;
-  width: 206px;
-  padding: 14px;
-  cursor: pointer;
-  background: linear-gradient(#ff79da, #9356dc);
-  margin: 14px auto 40px auto;
-  display: block;
+.btn-check {
+  display: none;
 }
-.envoyer:hover {
-  box-shadow: rgba(127, 122, 122, 0.7215686275) 0px 5px 9px;
-  background: linear-gradient(#ff8de0, #9e67e0);
+.btn-check__icon {
+  font-size: 30px;
 }
 
 .header {

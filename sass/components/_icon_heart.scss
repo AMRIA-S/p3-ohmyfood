@@ -15,6 +15,9 @@
 .heart-colorer {
     color: white;
     @include icon-heart;
+    transform:scaley(0);
+  transition:transform 300ms;
+  transform-origin: bottom;
     z-index: 2;
 
     &--heart {
