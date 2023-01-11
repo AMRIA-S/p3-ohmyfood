@@ -10,13 +10,13 @@
     }
 
     &--plat-1 {
-        animation: apparition 4s;
+        animation: apparition 12s;
     }
     &--plat-2 {
-        animation: apparition 6s;
+        animation: apparition 14s;
     }
     &--plat-3 {
-        animation: apparition 8s;
+        animation: apparition 16s;
     }
 
     &--dessert-1 {
@@ -35,8 +35,7 @@
         animation: apparition 2s;
     }
     &--plat {
-        animation: apparition 2s;
-        animation-delay: 10s;
+        animation: apparition 10s;
     }
     &--dessert {
         animation: apparition 18s;

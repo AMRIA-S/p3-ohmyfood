@@ -128,13 +128,13 @@
   animation: apparition 8s;
 }
 .fieldset--plat-1 {
-  animation: apparition 4s;
+  animation: apparition 12s;
 }
 .fieldset--plat-2 {
-  animation: apparition 6s;
+  animation: apparition 14s;
 }
 .fieldset--plat-3 {
-  animation: apparition 8s;
+  animation: apparition 16s;
 }
 .fieldset--dessert-1 {
   animation: apparition 20s;
@@ -150,8 +150,7 @@
   animation: apparition 2s;
 }
 .titre-section--plat {
-  animation: apparition 2s;
-  animation-delay: 10s;
+  animation: apparition 10s;
 }
 .titre-section--dessert {
   animation: apparition 18s;
