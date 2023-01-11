@@ -15,7 +15,9 @@
     position: absolute;
     right: 10%;
     font-size: 26px;
-    margin-top: 30px;
+    margin-top: -4px;
+    background-color: initial;
+    border: none;
 }
 
 @mixin heart-hover {
@@ -27,4 +29,5 @@
 
 @mixin heart-right {
     right: 6%;
+    margin-top: 28px;
 }

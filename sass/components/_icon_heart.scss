@@ -2,6 +2,10 @@
     @include icon-heart;
     z-index: 3;
 
+    &--heart {
+      @include heart-right;
+    }
+
     
     &:active {
         color: white;
@@ -21,4 +25,11 @@
     transform:scaley(0);
     transition:transform 300ms;
     transform-origin: bottom;
+    
+    &--heart {
+      @include heart-right;
+    }
+}
+.heart {
+  font-size: 26px;
 }
