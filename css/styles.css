@@ -33,10 +33,10 @@
 }
 @keyframes check {
   from {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   to {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
 }
 @keyframes prix {
@@ -205,11 +205,11 @@ a {
   margin-bottom: 24px;
   border-radius: 16px;
   border: none;
-  width: 100%;
+  width: 83%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 14px;
+  gap: 20px;
 }
 .fonctionnement .btn-acceuil__menu .number {
   border: 2px solid #9356dc;
@@ -220,6 +220,9 @@ a {
   left: 7px;
   background: #9356dc;
   color: #fff;
+}
+.fonctionnement .btn-acceuil__menu .text-number {
+  font-size: 15px;
 }
 .fonctionnement .btn-acceuil__menu--3 {
   background: #f2eafb;
