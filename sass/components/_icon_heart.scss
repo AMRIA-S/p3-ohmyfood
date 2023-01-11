@@ -2,28 +2,23 @@
     @include icon-heart;
     z-index: 3;
 
-    &--heart {
-        @include heart-right
-    }
-
+    
     &:active {
         color: white;
         z-index: 2;
+        
+      & + .heart-colorer {
+        transform:scale(1);
+        @include heart-hover;
+      }
         
     }
 }
 .heart-colorer {
     color: white;
     @include icon-heart;
-    transform:scaley(0);
-  transition:transform 300ms;
-  transform-origin: bottom;
     z-index: 2;
-
-    &--heart {
-        @include heart-right
-    }
-    &:hover {
-        @include heart-hover;
-    }
+    transform:scaley(0);
+    transition:transform 300ms;
+    transform-origin: bottom;
 }

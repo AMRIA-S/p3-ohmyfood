@@ -36,56 +36,58 @@
     font-size: nth($list: $size, $n: 7);
     margin-left: 18px;
 
-    
+    &--espace {
+        margin-left: nth($list: $margin, $n: 8);
+    }    
 }
-    .fieldset {
-        border: none;
-        margin: nth($list: $margin, $n: 4);
-        padding: nth($list: $padding, $n: 3);
-        border-radius: 15px;
-        box-shadow: darken($ombre-btn, 10%) 0px 0px 20px;
-        margin-bottom: nth($list: $margin, $n: 4);
+.fieldset {
+    border: none;
+    margin: nth($list: $margin, $n: 4);
+    padding: nth($list: $padding, $n: 3);
+    border-radius: 15px;
+    box-shadow: darken($ombre-btn, 10%) 0px 0px 20px;
+    margin-bottom: nth($list: $margin, $n: 4);
 
-        &:hover {
-            box-shadow: darken($ombre-btn, 30%) 0px 0px 20px;
-        }
-        
-        &__align-prix {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin: 0;
-
-        }
-        & dt {
-            margin: nth($list: $margin, $n: 1);
-            font-size: nth($list: $size, $n: 8);
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: nth($list: $width, $n: 2);
-            white-space: nowrap;
-        }
-
-        & h6 {
-            margin: nth($list: $margin, $n: 1);
-        }
-        &:hover .btn-check {
-            display: block;
-            color: $color-link;
-            border: none;
-            border-radius: 0px 15px 15px 0px;
-            background: $color-tertiaire;
-            padding: 23px 28px;
-            right: 14px;
-            margin-top: -21px;
-            position: absolute;
-
-            
-    
-            
-        }
+    &:hover {
+        box-shadow: darken($ombre-btn, 30%) 0px 0px 20px;
     }
+        
+    &__align-prix {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 0;
+    }
+
+    & dt {
+        margin: nth($list: $margin, $n: 1);
+        font-size: nth($list: $size, $n: 8);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: nth($list: $width, $n: 2);
+        white-space: nowrap;
+    }
+
+    & h6 {
+        margin: nth($list: $margin, $n: 1);
+    }
+
+    &:hover .btn-check {
+        display: block;
+        color: $color-link;
+        border: none;
+        border-radius: 0px 15px 15px 0px;
+        background: $color-tertiaire;
+        padding: 23px 28px;
+        right: 14px;
+        margin-top: -21px;
+        position: absolute;
+    }
+}
+.label {
+    font-weight: 600;
+}
  .btn-check {
     display: none;
 

@@ -216,12 +216,16 @@ a {
   font-size: 26px;
   z-index: 3;
 }
-.border-heart--heart {
-  right: 6%;
-}
 .border-heart:active {
   color: white;
   z-index: 2;
+}
+.border-heart:active + .heart-colorer {
+  transform: scale(1);
+  z-index: 3;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .heart-colorer {
@@ -229,19 +233,10 @@ a {
   position: absolute;
   right: 10%;
   font-size: 26px;
+  z-index: 2;
   transform: scaley(0);
   transition: transform 300ms;
   transform-origin: bottom;
-  z-index: 2;
-}
-.heart-colorer--heart {
-  right: 6%;
-}
-.heart-colorer:hover {
-  z-index: 3;
-  background: linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .btn-explorez {
@@ -319,6 +314,9 @@ a {
   font-size: 18px;
   margin-left: 18px;
 }
+.titre-section--espace {
+  margin-left: 60px;
+}
 
 .fieldset {
   border: none;
@@ -359,6 +357,10 @@ a {
   right: 14px;
   margin-top: -21px;
   position: absolute;
+}
+
+.label {
+  font-weight: 600;
 }
 
 .btn-check {
