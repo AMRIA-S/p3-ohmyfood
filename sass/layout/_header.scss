@@ -5,11 +5,13 @@
 
     &__arrow {
         font-size: nth($list: $size, $n: 5);
-        float: left;
-        padding-left: nth($list: $padding, $n: 3);
-        padding-top: 8px;
+        top: 1.3rem;
+        left: 1rem;
+        position: absolute;        
+    }
+    .arrow-left {
         color: $background-footer;
-
+        
         &:hover {
             color: $color-secondaire;
         }

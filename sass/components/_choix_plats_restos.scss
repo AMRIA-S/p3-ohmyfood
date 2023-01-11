@@ -6,9 +6,8 @@
 
 .header-form {
     display: flex;
-    align-items: center;
     flex-direction: row;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 40px 40px 0px 0px;
     margin-top: -38px;
     background: white;
     position: relative;
@@ -16,9 +15,11 @@
 
     &__title {
         font-family: shrikhand;
-        font-size: nth($list: $size, $n: 6);
+        font-size: 24px;
         font-weight: 500;
+        padding-top: 26px;
         padding-left: nth($list: $padding, $n: 3);
+        margin: 0;
     }
 }
 
@@ -31,10 +32,11 @@
 .titre-section{
     border-bottom: 4px solid $color-tertiaire;
     width: nth($list: $width, $n: 1);
-    padding-bottom: nth($list: $padding, $n: 5);
-    margin-bottom: nth($list: $margin, $n: 6);
-    font-size: nth($list: $size, $n: 7);
-    margin-left: 18px;
+    padding-bottom: 6px;
+    margin-top: 40px;
+    font-size: 16px;
+    margin-left: 15px;
+    font-weight: 500;
 
     &--espace {
         margin-left: nth($list: $margin, $n: 8);
@@ -42,57 +44,72 @@
 }
 .fieldset {
     border: none;
-    margin: nth($list: $margin, $n: 4);
-    padding: nth($list: $padding, $n: 3);
+    margin: 14px;
+    padding: 13px;
     border-radius: 15px;
     box-shadow: darken($ombre-btn, 10%) 0px 0px 20px;
     margin-bottom: nth($list: $margin, $n: 4);
 
     &:hover {
         box-shadow: darken($ombre-btn, 30%) 0px 0px 20px;
+
+        & dt {
+            width: 175px;
+        }
+
+        & .btn-check {
+            display: block;
+            color: $color-link;
+            border: none;
+            border-radius: 0px 15px 15px 0px;
+            background: $color-tertiaire;
+            padding: 26px 18px;
+            right: 14px;
+            margin-top: -14px;
+            position: absolute;
+        }
     }
+    
+    
         
     &__align-prix {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
+        padding-top: 4px;
         margin: 0;
     }
 
     & dt {
         margin: nth($list: $margin, $n: 1);
-        font-size: nth($list: $size, $n: 8);
+        font-size: 12px;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: nth($list: $width, $n: 2);
+        width: 212px;
         white-space: nowrap;
+    }
+
+    & dd {
+        margin: 0px;
     }
 
     & h6 {
         margin: nth($list: $margin, $n: 1);
+        font-size: 18px;
     }
 
-    &:hover .btn-check {
-        display: block;
-        color: $color-link;
-        border: none;
-        border-radius: 0px 15px 15px 0px;
-        background: $color-tertiaire;
-        padding: 23px 28px;
-        right: 14px;
-        margin-top: -21px;
-        position: absolute;
-    }
+    
 }
 .label {
     font-weight: 600;
+    font-size: 15px;
 }
- .btn-check {
+.btn-check {
     display: none;
 
     &__icon {
-    font-size: 30px;
+    font-size: 20px;
     }
 }
 

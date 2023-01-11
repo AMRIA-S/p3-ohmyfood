@@ -10,13 +10,13 @@
     }
 
     &--plat-1 {
-        animation: apparition 12s;
+        animation: apparition 4s;
     }
     &--plat-2 {
-        animation: apparition 14s;
+        animation: apparition 6s;
     }
     &--plat-3 {
-        animation: apparition 16s;
+        animation: apparition 8s;
     }
 
     &--dessert-1 {
@@ -35,9 +35,21 @@
         animation: apparition 2s;
     }
     &--plat {
-        animation: apparition 10s;
+        animation: apparition 2s;
+        animation-delay: 10s;
     }
     &--dessert {
         animation: apparition 18s;
     }
+}
+
+.btn-check {
+    animation: checkbox 1s;
+}
+.btn-check__icon {
+    animation: check 900ms;
+}
+.fieldset:hover h6 {
+    animation: prix 0.55s;
+    animation-fill-mode: both;
 }
