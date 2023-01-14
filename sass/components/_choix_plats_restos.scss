@@ -17,7 +17,7 @@
         font-family: shrikhand;
         font-size: 24px;
         font-weight: 500;
-        padding-top: 26px;
+        padding-top: nth($list: $margin, $n: 8);
         padding-left: nth($list: $padding, $n: 3);
         margin: 0;
     }
@@ -33,9 +33,9 @@
     border-bottom: 4px solid $color-tertiaire;
     width: nth($list: $width, $n: 1);
     padding-bottom: 6px;
-    margin-top: 40px;
-    font-size: 16px;
-    margin-left: 15px;
+    margin-top: nth($list: $margin, $n: 9);
+    font-size: nth($list: $size, $n: 3);
+    margin-left: nth($list: $margin, $n: 2);
     font-weight: 500;
 
     &--espace {
@@ -44,8 +44,8 @@
 }
 .fieldset {
     border: none;
-    margin: 14px;
-    padding: 13px;
+    margin: nth($list: $margin, $n: 4);
+    padding: nth($list: $padding, $n: 9);
     border-radius: 15px;
     box-shadow: darken($ombre-btn, 10%) 0px 0px 20px;
     margin-bottom: nth($list: $margin, $n: 4);
@@ -78,7 +78,7 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 4px;
-        margin: 0;
+        margin: nth($list: $margin, $n: 1);
     }
 
     & dt {
@@ -86,30 +86,30 @@
         font-size: 12px;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: 212px;
+        width: nth($list: $width, $n: 7);
         white-space: nowrap;
     }
 
     & dd {
-        margin: 0px;
+        margin: nth($list: $margin, $n: 1);
     }
 
     & h6 {
         margin: nth($list: $margin, $n: 1);
-        font-size: 18px;
+        font-size: nth($list: $size, $n: 7);
     }
 
     
 }
 .label {
     font-weight: 600;
-    font-size: 15px;
+    font-size: nth($list: $size, $n: 2);
 }
 .btn-check {
     display: none;
 
     &__icon {
-    font-size: 20px;
+    font-size: nth($list: $size, $n: 5);
     }
 }
 

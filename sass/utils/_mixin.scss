@@ -5,6 +5,14 @@
 
 }
 
+@mixin ombre-hover {
+    box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
+}
+
+@mixin color-background-btn{
+    background: linear-gradient(lighten($color-secondaire, 4%), lighten($color-primaire, 4%));
+}
+
 @mixin text-form {
     margin: 0px;
     text-align: center;

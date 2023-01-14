@@ -1,6 +1,6 @@
 .list-resto {
     background-color: $background-gris-clair;
-    padding: 20px;
+    padding: nth($list: $padding, $n: 3);
 
 
     .restaurant {
@@ -8,24 +8,24 @@
         flex-direction: column;
 
         &__article {
-            width: 100%;
-            margin-bottom: 20px;
+            width: nth($list: $width, $n: 3);
+            margin-bottom: nth($list: $margin, $n: 2);
         }
 
         &__cards {
-            margin: 0px;
+            margin: nth($list: $margin, $n: 1);
             background-color: #fff;
             border-radius: 20px;
             box-shadow: $ombre-btn 0px 5px 9px;
 
             &:hover {
-                box-shadow: darken($ombre-btn, 20%) 0px 5px 9px;
+                @include ombre-hover;                
             }
 
             .nouveau {
                 font-weight: 600;
-                font-size: 14px;
-                height: 14px;
+                font-size: nth($list: $size, $n: 2);
+                height: 15px;
                 color: #069a4b;
                 position: absolute;
                 right: 10%;
@@ -38,7 +38,7 @@
         &__photo {
             object-fit: cover;
             height: 144px;
-            width: 100%;
+            width: nth($list: $width, $n: 3);
             border-radius: 20px 20px 0px 0px;
         }
 
@@ -46,7 +46,7 @@
             display: flex;
             flex-direction: column;
             gap: 3px;
-            padding: 12px;
+            padding: nth($list: $padding, $n: 9);
             color: black;
 
         }
@@ -57,7 +57,7 @@
 
         & h5{
             margin: nth($list: $margin, $n: 1);
-            font-size: 15px;
+            font-size: nth($list: $size, $n: 2);
             font-weight: normal;
         }
     }

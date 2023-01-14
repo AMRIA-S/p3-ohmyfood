@@ -15,8 +15,8 @@
     display: block;
 
     &:hover {
-        box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
-        background: linear-gradient(lighten($color-secondaire, 4%), lighten($color-primaire, 4%))
+        @include ombre-hover; 
+        @include color-background-btn;
     }
 }
 
@@ -35,7 +35,7 @@
     display: block;
 
     &:hover {
-        box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
-        background: linear-gradient(lighten($color-secondaire, 4%), lighten($color-primaire, 4%))
+        @include ombre-hover; 
+        @include color-background-btn;
     }
 }
