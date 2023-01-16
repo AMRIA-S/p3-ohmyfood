@@ -16,6 +16,15 @@
         justify-content: space-around;
         flex-wrap: wrap;
 
+        & ul {
+            margin: nth($list: $margin, $n: 1);
+            padding: nth($list: $padding, $n: 1);
+        }
+
+        & li {
+            list-style: none;
+        }
+
         &__menu {
             background-color: rgba(240, 240, 240, 0.4705882353);
             box-shadow: rgb(202 200 200 / 72%) 0px 5px 9px;
@@ -36,6 +45,7 @@
                 margin: nth($list: $margin, $n: 1);
                 position: absolute;
                 left: 7px;
+                font-size: nth($list: $size, $n: 8);
                 background: $color-primaire;
                 color: $color-link;
             }

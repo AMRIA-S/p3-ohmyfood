@@ -1,13 +1,16 @@
 .header {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 6px;
+    padding-top: nth($list: $padding, $n: 3);
+    padding-bottom: nth($list: $padding, $n: 5);
+    
 
     &__arrow {
         font-size: nth($list: $size, $n: 5);
         top: 1.3rem;
         left: 1rem;
-        position: absolute;        
+        position: absolute;   
+        border: none;
+        background: initial;     
     }
     .arrow-left {
         color: $background-footer;

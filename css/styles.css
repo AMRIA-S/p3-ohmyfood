@@ -197,6 +197,13 @@ a {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.fonctionnement .btn-acceuil ul {
+  margin: 0px;
+  padding: 0px;
+}
+.fonctionnement .btn-acceuil li {
+  list-style: none;
+}
 .fonctionnement .btn-acceuil__menu {
   background-color: rgba(240, 240, 240, 0.4705882353);
   box-shadow: rgba(202, 200, 200, 0.72) 0px 5px 9px;
@@ -217,6 +224,7 @@ a {
   margin: 0px;
   position: absolute;
   left: 7px;
+  font-size: 12px;
   background: #9356dc;
   color: #fff;
 }
@@ -256,8 +264,6 @@ a {
 
 .border-heart {
   position: absolute;
-  right: 10%;
-  font-size: 26px;
   margin-top: -4px;
   background-color: initial;
   border: none;
@@ -282,8 +288,6 @@ a {
 .heart-colorer {
   color: white;
   position: absolute;
-  right: 10%;
-  font-size: 26px;
   margin-top: -4px;
   background-color: initial;
   border: none;
@@ -295,6 +299,12 @@ a {
 .heart-colorer--heart {
   right: 6%;
   margin-top: 28px;
+}
+
+.heart-div {
+  font-size: 26px;
+  right: 20%;
+  position: absolute;
 }
 
 .heart {
@@ -360,7 +370,7 @@ a {
   font-family: shrikhand;
   font-size: 24px;
   font-weight: 500;
-  padding-top: 60px;
+  padding-top: 25px;
   padding-left: 20px;
   margin: 0;
 }
@@ -453,6 +463,8 @@ a {
   top: 1.3rem;
   left: 1rem;
   position: absolute;
+  border: none;
+  background: initial;
 }
 .header .arrow-left {
   color: #464646;

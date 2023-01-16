@@ -30,6 +30,11 @@
       @include heart-right;
     }
 }
+.heart-div {
+  font-size: nth($list: $size, $n: 6);
+  right: 20%;
+  position: absolute;
+}
 .heart {
-  font-size: 26px;
+  font-size: nth($list: $size, $n: 6);
 }
