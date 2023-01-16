@@ -1,4 +1,4 @@
-.fieldset {
+.cards-menu {
     &--entree-1 {
         animation: apparition 4s;
     }
@@ -48,7 +48,7 @@
 .btn-check__icon {
     animation: check 900ms;
 }
-.fieldset:hover h6 {
+.cards-menu:hover h5 {
     animation: prix 0.55s;
     animation-fill-mode: both;
 }

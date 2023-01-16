@@ -1,26 +1,28 @@
-.header {
+.header-title {
+    font-family: shrikhand;
     text-align: center;
-    padding-top: nth($list: $padding, $n: 3);
-    padding-bottom: nth($list: $padding, $n: 5);
+    margin-top: nth($list: $margin, $n: 6);
+    margin-bottom: 6px;
+    font-weight: 500;
+
+}
+
     
 
-    &__arrow {
-        font-size: nth($list: $size, $n: 5);
-        top: 1.3rem;
-        left: 1rem;
-        position: absolute;   
-        border: none;
-        background: initial;     
-    }
-    .arrow-left {
-        color: $background-footer;
-        
-        &:hover {
-            color: $color-secondaire;
-        }
-    }
-
-    &__logo {
-        width: nth($list: $width, $n: 4);
+.arrow {
+    font-size: nth($list: $size, $n: 5);
+    top: 1.3rem;
+    left: 1rem;
+    position: absolute;   
+    border: none;
+    background: initial;     
+}
+.arrow-left {
+    color: $background-footer;
+     
+    &:hover {
+        color: $color-secondaire;
     }
 }
+
+    

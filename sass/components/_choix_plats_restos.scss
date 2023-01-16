@@ -15,9 +15,9 @@
 
     &__title {
         font-family: shrikhand;
-        font-size: 24px;
+        font-size: nth($list: $size, $n: 6);
         font-weight: 500;
-        padding-top: nth($list: $padding, $n: 8);
+        padding-top: nth($list: $padding, $n: 9);
         padding-left: nth($list: $padding, $n: 3);
         margin: 0;
     }
@@ -42,19 +42,26 @@
         margin-left: nth($list: $margin, $n: 8);
     }    
 }
-.fieldset {
+.cards-menu {
     border: none;
     margin: nth($list: $margin, $n: 4);
-    padding: nth($list: $padding, $n: 9);
+    padding: 12px 10px;
     border-radius: 15px;
     box-shadow: darken($ombre-btn, 10%) 0px 0px 20px;
     margin-bottom: nth($list: $margin, $n: 4);
+    cursor: pointer;
 
     &:hover {
         box-shadow: darken($ombre-btn, 30%) 0px 0px 20px;
 
-        & dt {
-            width: 175px;
+        & h3 {
+            max-width: 76%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        & h4 {
+            max-width: 87%;
         }
 
         & .btn-check {
@@ -63,9 +70,9 @@
             border: none;
             border-radius: 0px 15px 15px 0px;
             background: $color-tertiaire;
-            padding: 26px 18px;
+            padding: 25px 20px;
             right: 14px;
-            margin-top: -14px;
+            margin-top: -57px;
             position: absolute;
         }
     }
@@ -80,23 +87,30 @@
         padding-top: 4px;
         margin: nth($list: $margin, $n: 1);
     }
-
-    & dt {
+    
+    & h3 {
         margin: nth($list: $margin, $n: 1);
-        font-size: 12px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: nth($list: $width, $n: 7);
-        white-space: nowrap;
+        font-size: 18px;
     }
 
     & dd {
         margin: nth($list: $margin, $n: 1);
     }
 
-    & h6 {
+    & h4 {
         margin: nth($list: $margin, $n: 1);
-        font-size: nth($list: $size, $n: 7);
+        font-size: 12px;
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 213px;
+        white-space: nowrap;
+    }
+
+    & h5 {
+        margin: nth($list: $margin, $n: 1);
+        font-size: 15px;
+        padding-right: 10px;
     }
 
     
