@@ -1,0 +1,24 @@
+.load {
+    width: 100%;
+    height: 155%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    text-align: center;
+    animation: load 2s both;
+    animation-delay: 3s;
+
+    &:hover {
+        display: none;
+    }
+
+    &__spinner {
+        color: $color-tertiaire;
+        font-size: 112px;
+        margin-top: 17rem;
+
+        &:hover {
+            display: none;
+        }
+    }
+}

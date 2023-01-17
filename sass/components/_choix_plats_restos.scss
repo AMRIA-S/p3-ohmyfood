@@ -31,7 +31,7 @@
 
 .titre-section{
     border-bottom: 4px solid $color-tertiaire;
-    width: nth($list: $width, $n: 1);
+    width: 38px;
     padding-bottom: 6px;
     margin-top: nth($list: $margin, $n: 9);
     font-size: nth($list: $size, $n: 3);
@@ -39,7 +39,7 @@
     font-weight: 500;
 
     &--espace {
-        margin-left: nth($list: $margin, $n: 8);
+        margin-left: 50px;
     }    
 }
 .cards-menu {
@@ -56,23 +56,21 @@
 
         & h3 {
             max-width: 76%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        & h4 {
-            max-width: 87%;
         }
 
-        & .btn-check {
+        & .cards-menu__detail {
+            max-width: 65%;
+        }
+
+        & .validation-plat {
             display: block;
             color: $color-link;
             border: none;
             border-radius: 0px 15px 15px 0px;
             background: $color-tertiaire;
-            padding: 25px 20px;
+            padding: 22px 20px;
             right: 14px;
-            margin-top: -57px;
+            margin-top: -53px;
             position: absolute;
         }
     }
@@ -90,11 +88,16 @@
     
     & h3 {
         margin: nth($list: $margin, $n: 1);
-        font-size: 18px;
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 86%;
+        white-space: nowrap;
     }
 
-    & dd {
+    &__detail {
         margin: nth($list: $margin, $n: 1);
+        max-width: 79%;
     }
 
     & h4 {
@@ -103,7 +106,6 @@
         font-weight: 500;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 213px;
         white-space: nowrap;
     }
 
@@ -119,7 +121,7 @@
     font-weight: 600;
     font-size: nth($list: $size, $n: 2);
 }
-.btn-check {
+.validation-plat {
     display: none;
 
     &__icon {

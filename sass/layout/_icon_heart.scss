@@ -33,9 +33,14 @@
 .heart {
   font-size: nth($list: $size, $n: 6);
   position: absolute;
-  right: 19%;
-  margin-top: -15%;
+  left: 78%;
+  margin-top: -18%;
   border: none;
   background: initial;
   cursor: pointer;
+
+  &--titre {
+    left: 84%;
+    margin-top: 2rem;
+  }
 }

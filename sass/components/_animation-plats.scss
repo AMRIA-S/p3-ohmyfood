@@ -3,7 +3,7 @@
         animation: apparition 4s;
     }
     &--entree-2 {
-        animation: apparition 6s;
+       animation: apparition 6s;
     }
     &--entree-3 {
         animation: apparition 8s;
@@ -42,12 +42,14 @@
     }
 }
 
-.btn-check {
+.validation-plat {
     animation: checkbox 1s;
+
+    &__icon {
+        animation: check 900ms;
+    }
 }
-.btn-check__icon {
-    animation: check 900ms;
-}
+
 .cards-menu:hover h5 {
     animation: prix 0.55s;
     animation-fill-mode: both;

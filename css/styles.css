@@ -40,11 +40,20 @@
   }
 }
 @keyframes prix {
-  0% {
+  from {
     transform: translate(0px, 0px);
   }
-  100% {
+  to {
     transform: translate(-50px, 0px);
+  }
+}
+@keyframes load {
+  from {
+    opacity: 0.5;
+    background: #000;
+  }
+  to {
+    opacity: 0;
   }
 }
 .explorer-restos {
@@ -62,6 +71,28 @@
   margin: 0px;
   text-align: center;
   padding-bottom: 12px;
+}
+
+.load {
+  width: 100%;
+  height: 155%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+  animation: load 2s both;
+  animation-delay: 3s;
+}
+.load:hover {
+  display: none;
+}
+.load__spinner {
+  color: #99e2d0;
+  font-size: 112px;
+  margin-top: 17rem;
+}
+.load__spinner:hover {
+  display: none;
 }
 
 .list-resto {
@@ -159,11 +190,10 @@
   animation: apparition 18s;
 }
 
-.btn-check {
+.validation-plat {
   animation: checkbox 1s;
 }
-
-.btn-check__icon {
+.validation-plat__icon {
   animation: check 900ms;
 }
 
@@ -310,11 +340,15 @@ a:hover {
 .heart {
   font-size: 26px;
   position: absolute;
-  right: 19%;
-  margin-top: -15%;
+  left: 78%;
+  margin-top: -18%;
   border: none;
   background: initial;
   cursor: pointer;
+}
+.heart--titre {
+  left: 84%;
+  margin-top: 2rem;
 }
 
 .btn-explorez {
@@ -387,7 +421,7 @@ a:hover {
 
 .titre-section {
   border-bottom: 4px solid #99e2d0;
-  width: 40px;
+  width: 38px;
   padding-bottom: 6px;
   margin-top: 40px;
   font-size: 16px;
@@ -395,7 +429,7 @@ a:hover {
   font-weight: 500;
 }
 .titre-section--espace {
-  margin-left: 60px;
+  margin-left: 50px;
 }
 
 .cards-menu {
@@ -412,22 +446,19 @@ a:hover {
 }
 .cards-menu:hover h3 {
   max-width: 76%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
-.cards-menu:hover h4 {
-  max-width: 87%;
+.cards-menu:hover .cards-menu__detail {
+  max-width: 65%;
 }
-.cards-menu:hover .btn-check {
+.cards-menu:hover .validation-plat {
   display: block;
   color: #fff;
   border: none;
   border-radius: 0px 15px 15px 0px;
   background: #99e2d0;
-  padding: 25px 20px;
+  padding: 22px 20px;
   right: 14px;
-  margin-top: -57px;
+  margin-top: -53px;
   position: absolute;
 }
 .cards-menu__align-prix {
@@ -440,10 +471,15 @@ a:hover {
 }
 .cards-menu h3 {
   margin: 0px;
-  font-size: 18px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 86%;
+  white-space: nowrap;
 }
-.cards-menu dd {
+.cards-menu__detail {
   margin: 0px;
+  max-width: 79%;
 }
 .cards-menu h4 {
   margin: 0px;
@@ -451,7 +487,6 @@ a:hover {
   font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 213px;
   white-space: nowrap;
 }
 .cards-menu h5 {
@@ -465,10 +500,10 @@ a:hover {
   font-size: 14px;
 }
 
-.btn-check {
+.validation-plat {
   display: none;
 }
-.btn-check__icon {
+.validation-plat__icon {
   font-size: 20px;
 }
 

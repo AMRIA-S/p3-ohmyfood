@@ -33,10 +33,20 @@
   }
 }
 @keyframes prix {
-  0% {
+  from {
     transform: translate(0px, 0px);
   }
-  100% {
+  to {
     transform: translate(-50px, 0px);
+  }
+}
+
+@keyframes load {
+  from {
+    opacity: 0.5;
+    background: #000;
+  }
+  to {
+    opacity: 0;
   }
 }
