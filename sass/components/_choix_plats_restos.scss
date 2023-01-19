@@ -15,7 +15,7 @@
 
     &__title {
         font-family: shrikhand;
-        font-size: nth($list: $size, $n: 6);
+        font-size: 24px;
         font-weight: 500;
         padding-top: nth($list: $padding, $n: 9);
         padding-left: nth($list: $padding, $n: 3);
@@ -33,10 +33,11 @@
     border-bottom: 4px solid $color-tertiaire;
     width: 38px;
     padding-bottom: 6px;
-    margin-top: nth($list: $margin, $n: 9);
+    margin-top: 30px;
     font-size: nth($list: $size, $n: 3);
     margin-left: nth($list: $margin, $n: 2);
     font-weight: 500;
+    visibility: hidden;
 
     &--espace {
         margin-left: 50px;
@@ -50,6 +51,7 @@
     box-shadow: darken($ombre-btn, 10%) 0px 0px 20px;
     margin-bottom: nth($list: $margin, $n: 4);
     cursor: pointer;
+    visibility: hidden;
 
     &:hover {
         box-shadow: darken($ombre-btn, 30%) 0px 0px 20px;
@@ -69,7 +71,7 @@
             border-radius: 0px 15px 15px 0px;
             background: $color-tertiaire;
             padding: 20px 18px;
-            right: 14px;
+            right: 0px;
             margin-top: -49px;
             position: absolute;
         }
@@ -87,7 +89,7 @@
     
     & h3 {
         margin: nth($list: $margin, $n: 1);
-        font-size: 16px;
+        font-size: 15px;
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 86%;
@@ -110,6 +112,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+    }
+
+    .titre-gras {
+        font-weight: 700;
     }
 
     & h5 {

@@ -1,44 +1,55 @@
 .cards-menu {
     &--entree-1 {
-        animation: apparition 4s;
+        animation: apparition 2s both;
+        animation-delay: 1s;
     }
     &--entree-2 {
-       animation: apparition 6s;
+       animation: apparition 2s both;
+       animation-delay: 2s;
     }
     &--entree-3 {
-        animation: apparition 8s;
+        animation: apparition 2s both;
+        animation-delay: 3s;
     }
 
     &--plat-1 {
-        animation: apparition 12s;
+        animation: apparition 2s both;
+        animation-delay: 6s;
     }
     &--plat-2 {
-        animation: apparition 14s;
+        animation: apparition 2s both;
+        animation-delay: 7s;
     }
     &--plat-3 {
-        animation: apparition 16s;
+        animation: apparition 2s both;
+        animation-delay: 8s;
     }
 
     &--dessert-1 {
-        animation: apparition 20s;
+        animation: apparition 2s both;
+        animation-delay: 11s;
     }
     &--dessert-2 {
-        animation: apparition 22s;
+        animation: apparition 2s both;
+        animation-delay: 12s;
     }
     &--dessert-3 {
-        animation: apparition 24s;
+        animation: apparition 2s both;
+        animation-delay: 13s;
     }
 }
 
 .titre-section {
     &--entree {
-        animation: apparition 2s;
+        animation: apparition 2s both;
     }
     &--plat {
-        animation: apparition 10s;
+        animation: apparition 2s both;
+        animation-delay: 5s;
     }
     &--dessert {
-        animation: apparition 18s;
+        animation: apparition 2s both;
+        animation-delay: 10s;
     }
 }
 

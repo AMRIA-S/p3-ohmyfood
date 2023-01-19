@@ -1,10 +1,3 @@
-@mixin link-footer {
-    gap: 10px;
-    display: flex;
-    align-items: center;
-
-}
-
 @mixin ombre-hover {
     box-shadow: darken($ombre-btn, 30%) 0px 5px 9px;
 }

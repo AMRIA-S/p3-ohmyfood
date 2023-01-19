@@ -22,12 +22,10 @@
         font-size: nth($list: $size, $n: 2);
         
         &--icon {
-            @include link-footer;
-
             & a {
                 display: flex;
-                flex-direction: row;
-                gap: 6px;
+                gap: 8px;
+                align-items: center;
             }
         
             .fa-utensils {

@@ -8,8 +8,7 @@
 
     
     &:active {
-        color: white;
-        z-index: 2;
+        visibility: hidden;
         
       & + .heart-colorer {
         transform:scale(1);
@@ -20,8 +19,6 @@
 }
 .heart-colorer {
     color: white;
-    @include icon-heart;
-    z-index: 2;
     transform:scaley(0);
     transition:transform 300ms;
     transform-origin: bottom;

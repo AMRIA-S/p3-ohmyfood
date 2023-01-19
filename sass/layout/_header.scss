@@ -9,20 +9,22 @@
 
     
 
-.arrow {
+.header-return {
     font-size: nth($list: $size, $n: 5);
     top: 1.3rem;
     left: 1rem;
     position: absolute;   
     border: none;
-    background: initial;     
-}
-.arrow-left {
-    color: $background-footer;
-     
-    &:hover {
-        color: $color-secondaire;
+    background: initial;    
+    
+    &__arrow-left {
+        color: $background-footer;
+         
+        &:hover {
+            color: $color-secondaire;
+        }
     }
 }
+
 
     
