@@ -1,4 +1,4 @@
-@media all and (min-width: 500px) and (max-width: 900px) {
+@media all and (min-width: 500px) and (max-width: 800px) {
 
 @import "choix_plats-tablette.scss";
 @import "form-accueil-tablette.scss";
@@ -7,5 +7,8 @@
 @import "header-tablette.scss";
 @import "footer-tablette.scss";
 @import "recherche-accueil-tablette.scss";
+@import "fonctionnement-site-tablette.scss";
+@import "list-resto-tablette.scss";
+@import "heart-tablette.scss";
 
 }

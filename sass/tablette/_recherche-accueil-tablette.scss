@@ -1,10 +1,10 @@
 .fa-location-dot {
-    font-size: 20px;
+    font-size: nth($list: $size, $n: 5);
 }
 .recherche {
-    padding: 18px;
+    padding: nth($list: $padding, $n: 6);
 
     &__adresse {
-        font-size: 18px;
+        font-size: nth($list: $size, $n: 7);
     }
 }

@@ -1,6 +1,6 @@
 .load {
-    width: 100%;
-    height: 155%;
+    width: nth($list: $width, $n: 3);
+    height: nth($list: $height, $n: 3);
     position: fixed;
     z-index: 1;
     top: 0;

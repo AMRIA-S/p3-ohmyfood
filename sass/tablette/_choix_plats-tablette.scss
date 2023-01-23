@@ -1,18 +1,19 @@
 
     .image-restaurant {
-        height: 368px;
+        height: nth($list: $height, $n: 2);
     }
     
     .header-form {
         &__title {
             font-size: 35px;
+            padding-left: nth($list: $padding, $n: 9);
         }
     }
 
     
     .titre-section {
         font-size: 25px;
-        width: 64px;
+        width: nth($list: $width, $n: 7);
     }
     .cards-menu {
         padding: 19px 10px;
@@ -38,7 +39,7 @@
         }
 
         & h4 {
-            font-size: 16px;
+            font-size: nth($list: $size, $n: 3);
         }
         & h5 {
             font-size: 19px;
@@ -48,6 +49,6 @@
     .validation-plat {
     
         &__icon {
-        font-size: 26px;
+        font-size: nth($list: $size, $n: 6);
         }
     }

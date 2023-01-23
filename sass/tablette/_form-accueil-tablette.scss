@@ -1,10 +1,10 @@
 .explorer-restos {
 
     &__title {
-        font-size: 40px;
+        font-size: nth($list: $size, $n: 9);
     }
 
     &__subtitle {
-        font-size: 20px;
+        font-size: nth($list: $size, $n: 5);
     }
 }

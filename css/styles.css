@@ -86,7 +86,7 @@
 
 .load {
   width: 100%;
-  height: 155%;
+  height: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -127,8 +127,7 @@
 .list-resto .restaurant__cards .nouveau {
   font-weight: 600;
   font-size: 14px;
-  height: 15px;
-  color: #069a4b;
+  color: #2c9c81;
   position: absolute;
   right: 10%;
   background: #8af7dd;
@@ -307,7 +306,6 @@ a:hover {
   padding: 18px;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 .formulaire .recherche__adresse {
   background-color: initial;
@@ -584,16 +582,17 @@ a:hover {
   font-size: 11px;
 }
 
-@media all and (min-width: 500px) and (max-width: 900px) {
+@media all and (min-width: 500px) and (max-width: 800px) {
   .image-restaurant {
     height: 368px;
   }
   .header-form__title {
     font-size: 35px;
+    padding-left: 30px;
   }
   .titre-section {
     font-size: 25px;
-    width: 64px;
+    width: 60px;
   }
   .cards-menu {
     padding: 19px 10px;
@@ -671,6 +670,53 @@ a:hover {
   }
   .recherche__adresse {
     font-size: 18px;
+  }
+  .explication {
+    padding: 26px 24px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    border: none;
+    width: 87%;
+    gap: 20px;
+  }
+  .explication__number {
+    padding: 4px 9px 3px 9px;
+    font-size: 15px;
+  }
+  .explication__icon {
+    font-size: 20px;
+  }
+  .explication__text {
+    font-size: 17px;
+  }
+  .list-resto h3 {
+    font-size: 26px;
+  }
+  .list-resto .restaurant__article {
+    margin-bottom: 28px;
+  }
+  .list-resto .restaurant__cards .nouveau {
+    font-size: 17px;
+  }
+  .list-resto .restaurant__photo {
+    height: 200px;
+  }
+  .list-resto .restaurant__nom {
+    padding: 16px;
+  }
+  .list-resto .restaurant h4 {
+    font-size: 18px;
+  }
+  .list-resto .restaurant h5 {
+    font-size: 18px;
+  }
+  .heart {
+    left: 85%;
+    font-size: 28px;
+  }
+  .heart--titre {
+    margin-top: 2.4rem;
+    font-size: 30px;
   }
 }
 

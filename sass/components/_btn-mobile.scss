@@ -9,7 +9,7 @@
     cursor: pointer;
     background: linear-gradient($color-secondaire, $color-primaire);
     box-shadow: $ombre-btn 0px 5px 9px;
-    margin-top: 14px;
+    margin-top: nth($list: $margin, $n: 4);
     margin-right: $marge-centrer;
     margin-left: $marge-centrer;
     display: block;

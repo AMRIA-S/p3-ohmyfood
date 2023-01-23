@@ -29,8 +29,7 @@
             .nouveau {
                 font-weight: 600;
                 font-size: nth($list: $size, $n: 2);
-                height: 15px;
-                color: #069a4b;
+                color: darken($color: $color-tertiaire, $amount: 35%);
                 position: absolute;
                 right: 10%;
                 background: #8af7dd;
@@ -41,7 +40,7 @@
 
         &__photo {
             object-fit: cover;
-            height: 144px;
+            height: nth($list: $height, $n: 4);
             width: nth($list: $width, $n: 3);
             border-radius: 20px 20px 0px 0px;
         }

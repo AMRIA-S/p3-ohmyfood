@@ -1,7 +1,7 @@
 .header-title {
-    margin-top: 24px;
+    margin-top: nth($list: $margin, $n: 3);
     margin-bottom: 6px;
-    font-size: 40px;
+    font-size: nth($list: $size, $n: 9);
 
 }
 
