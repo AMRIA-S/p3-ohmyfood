@@ -64,4 +64,11 @@
 .cards-menu:hover h5 {
     animation: prix 0.55s;
     animation-fill-mode: both;
+
+    @media all and (min-width: 500px) {
+        .cards-menu:hover h5 {
+        animation: prix-tablette 0.55s;
+        animation-fill-mode: both;
+    }
+    }
 }

@@ -71,3 +71,28 @@
         font-size: nth($list: $size, $n: 2);
     }
 }
+
+@media all and (min-width: 500px) {
+    .explication {
+        padding: 26px 24px;
+        margin-bottom: nth($list: $margin, $n: 3);
+        border-radius: 16px;
+        border: none;
+        width: nth($list: $width, $n: 4);
+        gap: 20px;
+
+        &__number {
+        padding: 4px 9px 3px 9px;
+        font-size: 15px;
+        }
+            
+
+        &__icon {
+        font-size: nth($list: $size, $n: 5);
+        }
+
+        &__text {
+            font-size: nth($list: $size, $n: 4);
+        }
+    }
+}

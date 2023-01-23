@@ -19,3 +19,16 @@
         }
     }
 }
+
+@media all and (min-width: 500px) {
+    .fa-location-dot {
+        font-size: nth($list: $size, $n: 5);
+    }
+    .recherche {
+        padding: nth($list: $padding, $n: 6);
+
+        &__adresse {
+            font-size: nth($list: $size, $n: 7);
+        }
+    }
+}

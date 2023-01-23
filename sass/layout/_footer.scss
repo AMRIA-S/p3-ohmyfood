@@ -37,3 +37,23 @@
         }
     }
 }
+
+@media all and (min-width: 500px) {
+    .footer {
+
+        &__title {
+            font-size: nth($list: $size, $n: 5);
+            padding-bottom: nth($list: $padding, $n: 6);
+            font-weight: normal;
+        }    
+    }
+    .menu-footer {
+        padding-left: nth($list: $padding, $n: 1);
+        margin: nth($list: $margin, $n: 1);
+        
+
+        &__link {
+            font-size: nth($list: $size, $n: 4);
+        }
+    }
+}

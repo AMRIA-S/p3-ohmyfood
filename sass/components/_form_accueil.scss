@@ -12,3 +12,16 @@
         @include text-form;
     }
 }
+
+@media all and (min-width: 500px) {
+    .explorer-restos {
+
+        &__title {
+            font-size: nth($list: $size, $n: 9);
+        }
+    
+        &__subtitle {
+            font-size: nth($list: $size, $n: 5);
+        }
+    }
+}    
