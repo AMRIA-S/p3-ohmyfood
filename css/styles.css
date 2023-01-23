@@ -48,6 +48,14 @@
     transform: translate(-50px, 0px);
   }
 }
+@keyframes prix-tablette {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(-66px, 0px);
+  }
+}
 @keyframes load {
   from {
     opacity: 0.5;
@@ -299,6 +307,7 @@ a:hover {
   padding: 18px;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .formulaire .recherche__adresse {
   background-color: initial;
@@ -345,7 +354,7 @@ a:hover {
   font-size: 26px;
   position: absolute;
   left: 78%;
-  margin-top: -18%;
+  margin-top: -4rem;
   border: none;
   background: initial;
   cursor: pointer;
@@ -573,6 +582,96 @@ a:hover {
 }
 .menu-footer__link--icon .fa-handshake-angle {
   font-size: 11px;
+}
+
+@media all and (min-width: 500px) and (max-width: 900px) {
+  .image-restaurant {
+    height: 368px;
+  }
+  .header-form__title {
+    font-size: 35px;
+  }
+  .titre-section {
+    font-size: 25px;
+    width: 64px;
+  }
+  .cards-menu {
+    padding: 19px 10px;
+  }
+  .cards-menu:hover h3 {
+    max-width: 73%;
+  }
+  .cards-menu:hover .cards-menu__detail {
+    max-width: 70%;
+  }
+  .cards-menu:hover .validation-plat {
+    margin-top: -65px;
+    padding: 29px 27px;
+  }
+  .cards-menu h3 {
+    font-size: 19px;
+  }
+  .cards-menu h4 {
+    font-size: 16px;
+  }
+  .cards-menu h5 {
+    font-size: 19px;
+  }
+  .validation-plat__icon {
+    font-size: 26px;
+  }
+  .explorer-restos__title {
+    font-size: 40px;
+  }
+  .explorer-restos__subtitle {
+    font-size: 20px;
+  }
+  .cards-menu:hover h5 {
+    animation: prix-tablette 0.55s;
+    animation-fill-mode: both;
+  }
+  .commander {
+    font-size: 20px;
+    border-radius: 34px;
+    padding: 20px;
+  }
+  .btn-explorez {
+    font-size: 17px;
+    border-radius: 35px;
+    width: 254px;
+    padding: 20px;
+  }
+  .header-title {
+    margin-top: 24px;
+    margin-bottom: 6px;
+    font-size: 40px;
+  }
+  .header-return {
+    font-size: 20px;
+    top: 2.5rem;
+    left: 2rem;
+  }
+  .footer__title {
+    font-size: 20px;
+    padding-bottom: 18px;
+    font-weight: normal;
+  }
+  .menu-footer {
+    padding-left: 0px;
+    margin: 0px;
+  }
+  .menu-footer__link {
+    font-size: 17px;
+  }
+  .fa-location-dot {
+    font-size: 20px;
+  }
+  .recherche {
+    padding: 18px;
+  }
+  .recherche__adresse {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

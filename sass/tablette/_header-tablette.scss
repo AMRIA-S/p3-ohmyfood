@@ -1,0 +1,13 @@
+.header-title {
+    margin-top: 24px;
+    margin-bottom: 6px;
+    font-size: 40px;
+
+}
+
+.header-return {
+    font-size: nth($list: $size, $n: 5);
+    top: 2.5rem;
+    left: 2rem;    
+   
+}

@@ -1,0 +1,17 @@
+.footer {
+
+    &__title {
+        font-size: 20px;
+        padding-bottom: nth($list: $padding, $n: 6);
+        font-weight: normal;
+    }    
+}
+.menu-footer {
+    padding-left: nth($list: $padding, $n: 1);
+    margin: nth($list: $margin, $n: 1);
+    
+
+    &__link {
+        font-size: 17px;
+    }
+}
