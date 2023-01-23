@@ -1,0 +1,35 @@
+.fonctionnement {
+    &__titre {
+        font-size: 30px;
+    }
+    &__site {
+        display: block;
+
+        & ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
+
+.explication {
+    width: 24%;
+
+    &--3 {
+        background: lighten($color-primaire, 35%);
+    }
+
+    &__number {
+
+    &--1 {
+        left: 2%;
+    }
+    &--2 {
+        left: 35%;
+    }
+    &--3 {
+        left: 67%;
+    }
+    }
+}

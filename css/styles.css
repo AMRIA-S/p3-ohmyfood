@@ -582,7 +582,7 @@ a:hover {
   font-size: 11px;
 }
 
-@media all and (min-width: 500px) and (max-width: 800px) {
+@media all and (min-width: 500px) {
   .image-restaurant {
     height: 368px;
   }
@@ -640,28 +640,6 @@ a:hover {
     width: 254px;
     padding: 20px;
   }
-  .header-title {
-    margin-top: 24px;
-    margin-bottom: 6px;
-    font-size: 40px;
-  }
-  .header-return {
-    font-size: 20px;
-    top: 2.5rem;
-    left: 2rem;
-  }
-  .footer__title {
-    font-size: 20px;
-    padding-bottom: 18px;
-    font-weight: normal;
-  }
-  .menu-footer {
-    padding-left: 0px;
-    margin: 0px;
-  }
-  .menu-footer__link {
-    font-size: 17px;
-  }
   .fa-location-dot {
     font-size: 20px;
   }
@@ -710,6 +688,28 @@ a:hover {
   .list-resto .restaurant h5 {
     font-size: 18px;
   }
+  .header-title {
+    margin-top: 24px;
+    margin-bottom: 6px;
+    font-size: 40px;
+  }
+  .header-return {
+    font-size: 20px;
+    top: 2.5rem;
+    left: 2rem;
+  }
+  .footer__title {
+    font-size: 20px;
+    padding-bottom: 18px;
+    font-weight: normal;
+  }
+  .menu-footer {
+    padding-left: 0px;
+    margin: 0px;
+  }
+  .menu-footer__link {
+    font-size: 17px;
+  }
   .heart {
     left: 85%;
     font-size: 28px;
@@ -717,6 +717,34 @@ a:hover {
   .heart--titre {
     margin-top: 2.4rem;
     font-size: 30px;
+  }
+}
+@media all and (min-width: 1001px) {
+  .fonctionnement__titre {
+    font-size: 30px;
+  }
+  .fonctionnement__site {
+    display: block;
+  }
+  .fonctionnement__site ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .explication {
+    width: 24%;
+  }
+  .explication--3 {
+    background: #f2eafb;
+  }
+  .explication__number--1 {
+    left: 2%;
+  }
+  .explication__number--2 {
+    left: 35%;
+  }
+  .explication__number--3 {
+    left: 67%;
   }
 }
 

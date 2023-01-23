@@ -4,18 +4,20 @@
 @import "./utils/keyframes";
 
 @import "./components/form_accueil.scss";
-@import "./components/load-spinner";
-@import "./components/list-resto.scss";
-@import "./components/animation-mobile.scss";
+@import "./components/load_spinner";
+@import "./components/list_resto.scss";
+@import "./components/animation_mobile.scss";
 @import "./components/ancre_body.scss";
 @import "./components/explication_fonctionnement.scss";
 @import "./components/recherche_accueil.scss";
 @import "./layout/icon_heart.scss";
-@import "./components/btn-mobile.scss";
-
+@import "./components/btn_mobile.scss";
 @import "./components/choix_plats_mobile.scss";
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 
-@import "./tablette/main_tablette.scss";
+//*responsible*//
+//*mobile jusqu'à 499px*//
+@import "./tablette/main_tablette.scss"; //*à partir 500px*//
+@import "./deskop/main_deskop.scss"; //*à partir de 1001px*//
