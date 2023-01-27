@@ -5,104 +5,148 @@
     & h3 {
         font-size: 21px;
     }
+}
 
-    .restaurant {
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    
+
+    &__article {
+        width: nth($list: $width, $n: 3);
+        margin-bottom: nth($list: $margin, $n: 2);
+    }
+
+    &__cards {
+        margin: nth($list: $margin, $n: 1);
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: $ombre-btn 0px 5px 9px;
+
+        &:hover {
+            @include ombre-hover;                
+        }
+
+        .nouveau {
+            font-weight: 600;
+            font-size: nth($list: $size, $n: 2);
+            color: darken($color: $color-tertiaire, $amount: 35%);
+            position: absolute;
+            right: 9%;
+            background: #8af7dd;
+            border: 2px #8af7dd solid;
+            padding: 7px;
+        }
+    }
+
+    &__photo {
+        object-fit: cover;
+        height: nth($list: $height, $n: 4);
+        width: nth($list: $width, $n: 3);
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    &__nom {
         display: flex;
         flex-direction: column;
+        gap: 3px;
+        padding: 10px;
+        color: black;
+
+    }
+
+    & h4 {
+        margin: nth($list: $margin, $n: 1);
+        font-weight: 700;
+    }
+
+    & h5{
+        margin: nth($list: $margin, $n: 1);
+        font-size: nth($list: $size, $n: 2);
+        font-weight: normal;
+    }
+}
+
+
+
+@media all and (min-width: 768px) {
+    .list-resto {
+        flex-direction: row;
+        justify-content: space-between;
+
+        & h3 {
+            font-size: 28px;
+        }
+    }
+
+    .restaurant {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        &__article {
+            margin-bottom: 28px;
+            width: 48%;
+        }
+        
+        .nouveau {
+            font-size: nth($list: $size, $n: 4);
+            
+            &--1 {
+                right: 54%;
+            }
+            &--2 {
+                right: 4%;
+            }
+        }
         
 
-        &__article {
-            width: nth($list: $width, $n: 3);
-            margin-bottom: nth($list: $margin, $n: 2);
-        }
-
-        &__cards {
-            margin: nth($list: $margin, $n: 1);
-            background-color: #fff;
-            border-radius: 20px;
-            box-shadow: $ombre-btn 0px 5px 9px;
-
-            &:hover {
-                @include ombre-hover;                
-            }
-
-            .nouveau {
-                font-weight: 600;
-                font-size: nth($list: $size, $n: 2);
-                color: darken($color: $color-tertiaire, $amount: 35%);
-                position: absolute;
-                right: 10%;
-                background: #8af7dd;
-                border: 2px #8af7dd solid;
-                padding: 7px;
-            }
-        }
-
         &__photo {
-            object-fit: cover;
-            height: nth($list: $height, $n: 4);
-            width: nth($list: $width, $n: 3);
-            border-radius: 20px 20px 0px 0px;
+            height: nth($list: $height, $n: 1);
         }
 
         &__nom {
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
-            padding: nth($list: $padding, $n: 8);
-            color: black;
+            padding-left: nth($list: $padding, $n: 5);
 
         }
 
         & h4 {
-            margin: nth($list: $margin, $n: 1);
-            font-weight: 700;
+            font-size: nth($list: $size, $n: 7);            
         }
 
         & h5{
-            margin: nth($list: $margin, $n: 1);
-            font-size: nth($list: $size, $n: 2);
-            font-weight: normal;
+            font-size: nth($list: $size, $n: 7);
         }
     }
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 992px) {
     .list-resto {
+        flex-direction: row;
+        justify-content: space-between;
 
         & h3 {
-            font-size: nth($list: $size, $n: 6);
+            font-size: 28px;
         }
+    }
+
+    .restaurant {
     
-        .restaurant {
-    
-            &__article {
-                margin-bottom: 28px;
+        &__article {
+            width: 24%;
+        }
+
+        .nouveau {
+            &--1 {
+                right: 76%;
             }
-    
-            &__cards {
-    
-                .nouveau {
-                    font-size: nth($list: $size, $n: 4);
-                }
+            &--2 {
+                right: 51.5%;
             }
-    
-            &__photo {
-                height: nth($list: $height, $n: 1);
-            }
-    
-            &__nom {
-                padding: nth($list: $padding, $n: 5);
-    
-            }
-    
-            & h4 {
-                font-size: nth($list: $size, $n: 7);            
-            }
-    
-            & h5{
-                font-size: nth($list: $size, $n: 7);
-            }
+        }
+
+        &__photo {
+            height: 236px;
         }
     }
 }

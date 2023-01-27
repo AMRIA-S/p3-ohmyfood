@@ -4,7 +4,9 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding-left: nth($list: $padding, $n: 3);
+    padding-right: nth($list: $padding, $n: 3);
     margin-bottom: nth($list: $margin, $n: 2);
+    margin-right: 46px;
 
     &__title {
         font-weight: 700;
@@ -35,11 +37,11 @@
     margin-bottom: nth($list: $margin, $n: 3);
     border-radius: 16px;
     border: none;
-    width: nth($list: $width, $n: 6);
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    width: 100%;
 
     &--3 {
         background: lighten($color-primaire, 35%);
@@ -51,7 +53,7 @@
     border-radius: 25px;
     margin: nth($list: $margin, $n: 1);
     position: absolute;
-    left: 15px;
+    left: 2.5%;
     font-size: nth($list: $size, $n: 8);
     background: $color-primaire;
     color: $color-link;
@@ -72,27 +74,83 @@
     }
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 768px) {
     .explication {
         padding: 26px 24px;
         margin-bottom: nth($list: $margin, $n: 3);
         border-radius: 16px;
         border: none;
-        width: nth($list: $width, $n: 4);
         gap: 20px;
-
+        
         &__number {
-        padding: 4px 9px 3px 9px;
-        font-size: 15px;
+            padding: 4px 9px 3px 9px;
+            font-size: 15px;
+            margin-left: -6%;
+            left: initial;
         }
             
 
         &__icon {
-        font-size: nth($list: $size, $n: 5);
+            font-size: nth($list: $size, $n: 5);
         }
 
         &__text {
             font-size: nth($list: $size, $n: 4);
+        }
+    }
+    .fonctionnement {
+        flex-direction: row;
+        margin-right: nth($list: $margin, $n: 1);
+        &__titre {
+            font-size: 28px;
+        }
+        
+    }
+}
+
+
+@media all and (min-width: 992px) {
+    .fonctionnement {
+        flex-direction: column;
+
+        &__title {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        &__site {
+
+            & ul {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+        
+    }
+    .explication {
+        width: 26%;
+        &__number {
+            margin-left: -4%;
+            font-size: 16px;
+        }
+    }
+    
+}
+
+@media all and (min-width: 1300px) {
+    .explication {
+        &__number {
+            margin-left: -3%;
+        }
+    }
+}
+
+@media all and (min-width: 1500px) {
+    .explication {
+        &__number {
+            margin-left: -2.7%;
         }
     }
 }

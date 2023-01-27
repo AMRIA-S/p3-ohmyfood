@@ -25,6 +25,13 @@
     -webkit-text-fill-color: transparent;
 }
 
+@mixin heart-tablette-1 {
+    left: 16%;
+}
+@mixin heart-tablette-2 {
+    left: -33%;
+}
+
 @mixin heart-right {
     right: 6%;
     margin-top: 28px;

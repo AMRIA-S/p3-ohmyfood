@@ -13,11 +13,12 @@
     }
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 768px) {
     .explorer-restos {
+        margin-bottom: nth($list: $margin, $n: 9);
 
         &__title {
-            font-size: nth($list: $size, $n: 9);
+            font-size: 30px;
         }
     
         &__subtitle {

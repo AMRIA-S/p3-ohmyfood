@@ -11,6 +11,10 @@
         animation: apparition 2s both;
         animation-delay: 3s;
     }
+    &--entree-4 {
+        animation: apparition 2s both;
+        animation-delay: 4s;
+    }
 
     &--plat-1 {
         animation: apparition 2s both;
@@ -27,15 +31,15 @@
 
     &--dessert-1 {
         animation: apparition 2s both;
-        animation-delay: 11s;
+        animation-delay: 10s;
     }
     &--dessert-2 {
         animation: apparition 2s both;
-        animation-delay: 12s;
+        animation-delay: 11s;
     }
     &--dessert-3 {
         animation: apparition 2s both;
-        animation-delay: 13s;
+        animation-delay: 12s;
     }
 }
 
@@ -49,7 +53,7 @@
     }
     &--dessert {
         animation: apparition 2s both;
-        animation-delay: 10s;
+        animation-delay: 9s;
     }
 }
 
@@ -61,14 +65,15 @@
     }
 }
 
-.cards-menu:hover h5 {
+.cards-menu:hover h6 {
     animation: prix 0.55s;
     animation-fill-mode: both;
+}
 
-    @media all and (min-width: 500px) {
-        .cards-menu:hover h5 {
-        animation: prix-tablette 0.55s;
-        animation-fill-mode: both;
+@media all and (min-width: 768px) {
+    .cards-menu:hover h6 {
+    animation: prix-tablette 0.70s;
+    animation-fill-mode: both;
     }
-    }
+    
 }

@@ -5,13 +5,12 @@
 }
 
 .header-form {
-    display: flex;
-    flex-direction: row;
     border-radius: 40px 40px 0px 0px;
     margin-top: -38px;
     background: white;
     position: relative;
     z-index: 2;
+    display: flex;
 
     &__title {
         font-family: shrikhand;
@@ -31,7 +30,7 @@
 
 .titre-section{
     border-bottom: 4px solid $color-tertiaire;
-    width: nth($list: $width, $n: 2);
+    width: 40px;
     padding-bottom: 6px;
     margin-top: 30px;
     font-size: nth($list: $size, $n: 3);
@@ -56,12 +55,12 @@
     &:hover {
         box-shadow: darken($ombre-btn, 30%) 0px 0px 20px;
 
-        & h3 {
+        & h4 {
             max-width: 76%;
         }
 
         & .cards-menu__detail {
-            max-width: 65%;
+            max-width: 66%;
         }
 
         & .validation-plat {
@@ -87,7 +86,7 @@
         margin: nth($list: $margin, $n: 1);
     }
     
-    & h3 {
+    & h4 {
         margin: nth($list: $margin, $n: 1);
         font-size: 15px;
         overflow: hidden;
@@ -105,7 +104,7 @@
         margin: nth($list: $margin, $n: 1);
     }
 
-    & h4 {
+    & h5 {
         margin: nth($list: $margin, $n: 1);
         font-size: nth($list: $size, $n: 8);
         font-weight: 500;
@@ -118,7 +117,7 @@
         font-weight: 700;
     }
 
-    & h5 {
+    & h6 {
         margin: nth($list: $margin, $n: 1);
         font-size: 15px;
         padding-right: 10px;
@@ -141,7 +140,7 @@
 
 
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 768px) {
     .image-restaurant {
         height: nth($list: $height, $n: 2);
     }
@@ -157,18 +156,20 @@
     .titre-section {
         font-size: 25px;
         width: nth($list: $width, $n: 7);
+        margin-bottom: 10px;
     }
     .cards-menu {
         padding: 19px 10px;
+        width: 43%;
 
         &:hover {
 
-            & h3 {
-                max-width: 73%;
+            & h4 {
+                max-width: 74%;
             }
-    
+
             & .cards-menu__detail {
-                max-width: 70%;
+                max-width: 59%;
             }
 
             & .validation-plat {
@@ -177,18 +178,27 @@
             }
         }
 
-        & h3 {
-            font-size: 19px;
+        &__detail {
+            max-width: 84%;
         }
 
         & h4 {
+            font-size: 19px;
+        }
+
+        & h5 {
             font-size: nth($list: $size, $n: 3);
         }
-        & h5 {
+        & h6 {
             font-size: 19px;
         }
     }
 
+    .flex-article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     .validation-plat {
     
         &__icon {
@@ -196,6 +206,80 @@
         }
     }
 }
+
+@media all and (min-width: 992px) {
+    .image-restaurant {
+        height: 498px;
+    }
+    .header-form {
+        &__title {
+            font-size: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .titre-section {
+        font-size: 25px;
+        width: nth($list: $width, $n: 7);
+        margin-bottom: 10px;
+    }
+    .cards-menu {
+        width: 28%;
+
+        &:hover {
+
+            & h4 {
+                max-width: 70%;
+            }
+
+            & .cards-menu__detail {
+                max-width: 53%;
+            }
+        }
+
+        &__detail {
+            max-width: 80%;
+        }
+
+        & h4 {
+            max-width: 95%;
+        }
+    }
+
+    .flex-article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .validation-plat {
+    
+        &__icon {
+        font-size: nth($list: $size, $n: 6);
+        }
+    }
+}
+
+@media all and (min-width: 1130px) {
+    .cards-menu {
+        &:hover {
+            & .cards-menu__detail {
+                max-width: 60%;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1364px) {
+    .cards-menu {
+        &:hover {
+            & .cards-menu__detail {
+                max-width: 66%;
+            }
+        }
+    }
+}
+
+
 
 
 

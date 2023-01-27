@@ -27,30 +27,72 @@
       @include heart-right;
     }
 }
+
 .heart {
   font-size: nth($list: $size, $n: 6);
   position: absolute;
-  left: 78%;
-  margin-top: -4rem;
+  margin-left: 75%;
+  margin-top: -3rem;
   border: none;
   background: initial;
   cursor: pointer;
 
   &--titre {
-    left: 84%;
+    left: 11%;
     margin-top: 2rem;
   }
 }
 
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 768px) {
   .heart {
-    left: 85%;
+    left: 89%;
     font-size: 28px;
+    margin-top: -4rem;
+
+    &--1 {
+      @include heart-tablette-1;
+    }
+    &--2 {
+      @include heart-tablette-2;
+    }
+    &--3 {
+      @include heart-tablette-1;
+    }
+    &--4 {
+      @include heart-tablette-2;
+    }
 
     &--titre {
         margin-top: 2.4rem;
         font-size: 30px;
+        left: 16%;
+    }
+  }
+}
+
+@media all and (min-width: 992px) {
+  .heart {
+    margin-top: -3.7rem;
+    font-size: 24px;
+
+    &--titre {
+      margin-top: 2.5rem;
+      font-size: 33px;
+      left: 0%;
+    }
+
+    &--1 {
+      left: -54%;
+    }
+    &--2 {
+      left: -30%;
+    }
+    &--3 {
+      left: -6%;
+    }
+    &--4 {
+      left: 19%;
     }
   }
 }
