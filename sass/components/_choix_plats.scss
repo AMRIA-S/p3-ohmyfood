@@ -36,11 +36,7 @@
     font-size: nth($list: $size, $n: 3);
     margin-left: nth($list: $margin, $n: 2);
     font-weight: 500;
-    visibility: hidden;
-
-    &--espace {
-        margin-left: 50px;
-    }    
+    visibility: hidden;   
 }
 .cards-menu {
     border: none;
@@ -111,10 +107,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-    }
-
-    .titre-gras {
-        font-weight: 700;
     }
 
     & h6 {

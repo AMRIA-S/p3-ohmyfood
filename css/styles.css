@@ -754,9 +754,6 @@ a:hover {
   font-weight: 500;
   visibility: hidden;
 }
-.titre-section--espace {
-  margin-left: 50px;
-}
 
 .cards-menu {
   border: none;
@@ -817,9 +814,6 @@ a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.cards-menu .titre-gras {
-  font-weight: 700;
 }
 .cards-menu h6 {
   margin: 0px;
