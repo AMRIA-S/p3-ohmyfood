@@ -12,7 +12,7 @@
        
       & + .heart-colorer {
         @include heart-hover;
-        animation: heart 300ms both;
+        animation: heart 150ms both;
       }
         
     }

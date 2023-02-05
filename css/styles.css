@@ -598,7 +598,7 @@ a:hover {
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: heart 300ms both;
+  animation: heart 150ms both;
 }
 
 .heart-colorer {
