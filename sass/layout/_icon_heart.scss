@@ -9,20 +9,17 @@
     
     &:active {
         visibility: hidden;
-        
+       
       & + .heart-colorer {
-        transform:scale(1);
         @include heart-hover;
+        animation: heart 300ms both;
       }
         
     }
 }
 .heart-colorer {
     color: white;
-    transform:scaley(0);
-    transition:transform 300ms;
-    transform-origin: bottom;
-    
+
     &--heart {
       @include heart-right;
     }
@@ -94,5 +91,29 @@
     &--4 {
       left: 19%;
     }
+  }
+
+  .border-heart {
+
+    &--heart {
+      @include heart-right;
+    }
+
+    
+    &:hover {
+        visibility: hidden;
+        
+      & + .heart-colorer {
+        animation: heart 300ms both;
+        @include heart-hover;
+      }
+        
+    }
+  }
+  .heart-colorer {
+    color: white;
+    transform:scaley(0);
+    transition:transform 300ms;
+    transform-origin: bottom;
   }
 }

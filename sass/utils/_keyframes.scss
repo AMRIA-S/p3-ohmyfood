@@ -9,6 +9,16 @@
   }
 }
 
+@keyframes heart {
+  from {
+    transform: scaley(0);
+    
+  }
+  to {
+    transform: scaley(1);
+    transform-origin: bottom;
+  }
+}
 @keyframes checkbox {
   from {
     transform: rotateY(-100deg);
