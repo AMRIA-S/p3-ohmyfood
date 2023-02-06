@@ -3,18 +3,7 @@
     z-index: 3;
 
     &--heart {
-      @include heart-right;
-    }
-
-    
-    &:active {
-        visibility: hidden;
-       
-      & + .heart-colorer {
-        @include heart-hover;
-        animation: heart 150ms both;
-      }
-        
+      @include heart-right;  
     }
 }
 .heart-colorer {
@@ -37,6 +26,17 @@
   &--titre {
     left: 11%;
     margin-top: 2rem;
+  }
+}
+.heart {
+  &:active {
+    & > .border-heart {
+      visibility: hidden;
+    }
+    & > .heart-colorer {
+      animation: heart 300ms both;
+      @include heart-hover;
+    }
   }
 }
 
@@ -73,6 +73,7 @@
     margin-top: -3.7rem;
     font-size: 24px;
 
+
     &--titre {
       margin-top: 2.5rem;
       font-size: 33px;
@@ -98,22 +99,21 @@
     &--heart {
       @include heart-right;
     }
-
-    
-    &:hover {
-        visibility: hidden;
-        
-      & + .heart-colorer {
-        animation: heart 300ms both;
-        @include heart-hover;
-      }
-        
-    }
   }
   .heart-colorer {
     color: white;
-    transform:scaley(0);
-    transition:transform 300ms;
-    transform-origin: bottom;
   }
+
+  .heart {
+    &:hover {
+      & > .border-heart {
+        visibility: hidden;
+      }
+      & > .heart-colorer {
+        animation: heart 300ms both;
+        @include heart-hover;
+      }
+    }
+  }
+
 }

@@ -590,16 +590,6 @@ a:hover {
   right: 6%;
   margin-top: 28px;
 }
-.border-heart:active {
-  visibility: hidden;
-}
-.border-heart:active + .heart-colorer {
-  z-index: 3;
-  background: linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: heart 150ms both;
-}
 
 .heart-colorer {
   color: white;
@@ -621,6 +611,17 @@ a:hover {
 .heart--titre {
   left: 11%;
   margin-top: 2rem;
+}
+
+.heart:active > .border-heart {
+  visibility: hidden;
+}
+.heart:active > .heart-colorer {
+  animation: heart 300ms both;
+  z-index: 3;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media all and (min-width: 768px) {
@@ -673,21 +674,18 @@ a:hover {
     right: 6%;
     margin-top: 28px;
   }
-  .border-heart:hover {
+  .heart-colorer {
+    color: white;
+  }
+  .heart:hover > .border-heart {
     visibility: hidden;
   }
-  .border-heart:hover + .heart-colorer {
+  .heart:hover > .heart-colorer {
     animation: heart 300ms both;
     z-index: 3;
     background: linear-gradient(#9356dc, #ff79da);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  .heart-colorer {
-    color: white;
-    transform: scaley(0);
-    transition: transform 300ms;
-    transform-origin: bottom;
   }
 }
 .btn-explorez {
