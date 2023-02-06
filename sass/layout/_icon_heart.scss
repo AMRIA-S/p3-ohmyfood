@@ -23,13 +23,7 @@
   background: initial;
   cursor: pointer;
 
-  &--titre {
-    left: 11%;
-    margin-top: 2rem;
-  }
-}
-.heart {
-  &:active {
+  &:focus {
     & > .border-heart {
       visibility: hidden;
     }
@@ -37,6 +31,11 @@
       animation: heart 300ms both;
       @include heart-hover;
     }
+  }
+
+  &--titre {
+    left: 11%;
+    margin-top: 2rem;
   }
 }
 
@@ -73,6 +72,15 @@
     margin-top: -3.7rem;
     font-size: 24px;
 
+    &:hover {
+      & > .border-heart {
+        visibility: hidden;
+      }
+      & > .heart-colorer {
+        animation: heart 300ms both;
+        @include heart-hover;
+      }
+    }
 
     &--titre {
       margin-top: 2.5rem;
@@ -103,17 +111,4 @@
   .heart-colorer {
     color: white;
   }
-
-  .heart {
-    &:hover {
-      & > .border-heart {
-        visibility: hidden;
-      }
-      & > .heart-colorer {
-        animation: heart 300ms both;
-        @include heart-hover;
-      }
-    }
-  }
-
 }
